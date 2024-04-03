@@ -1,0 +1,64 @@
+.logo {
+  display: flex;
+  align-items: center;
+  width: auto;
+  gap: 20px;
+
+  &__gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, $white, $main);
+    max-width: 71px;
+    aspect-ratio: 1 / 1;
+    padding: 3px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 50px $main);
+  }
+
+  &__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $light;
+    max-width: 65px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+
+    &_white {
+      background: $white;
+    }
+  }
+
+  &__icon {
+    max-width: 57%;
+  }
+
+  &__text {
+    max-width: 232px;
+    fill: $dark;
+
+    &_red {
+      max-width: 365px;
+      fill: $main;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .logo {
+    max-width: 200px;
+    gap: 10px;
+
+    &__circle {
+      max-width: 32px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .logo {
+
+  }
+}

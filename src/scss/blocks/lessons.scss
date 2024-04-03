@@ -1,0 +1,179 @@
+.lessons {
+  padding: 50px 0 200px;
+  z-index: 5;
+
+  &__container {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  &__title {
+    font-size: 55px;
+    font-weight: 900;
+    text-align: center;
+    max-width: 935px;
+  }
+
+  &__list.slick-dotted.slick-slider {
+    margin-bottom: 0;
+    padding-bottom: 100px;
+  }
+
+  &__list-item {
+    background: $salad_light;
+    max-width: 360px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  &__list-info {
+    padding: 15px 30px 40px;
+  }
+
+  &__list-title {
+    color: $white;
+    text-align: center;
+    background: $main;
+    max-width: 160px;
+    margin: 0 auto 10px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  &__list-text {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__link {
+    max-width: 380px;
+    padding: 30px;
+  }
+
+  .slick {
+    &-dots li {
+      background: $salad_light;
+      width: 9%;
+
+      &.slick-active {
+        background: $dark;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .lessons {
+
+    &__container {
+      max-width: 768px;
+    }
+
+    &__title {
+      font-size: 42px;
+    }
+
+    &__list-item {
+      max-width: 270px;
+    }
+
+    &__list-text {
+      font-size: 18px;
+    }
+
+    .slick-list {
+      overflow: visible;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lessons {
+    padding-bottom: 130px;
+
+    &__container {
+      max-width: 576px;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__list-item {
+      max-width: 170px;
+    }
+
+    &__list-info {
+      padding: 15px;
+    }
+
+    &__list-text {
+      font-size: 15px;
+    }
+
+    .slick-list {
+      overflow: visible;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .lessons {
+    &__container {
+      max-width: 480px;
+      gap: 30px;
+    }
+
+    &__list.slick-dotted.slick-slider {
+      max-width: 400px;
+      padding-bottom: 50px;
+    }
+
+    .slick-list {
+      overflow: hidden;
+    }
+
+    &__list-item {
+      max-width: 100%;
+    }
+
+    &__list-info {
+      padding: 15px 30px 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .lessons {
+    padding: 35px 0 130px;
+
+    &__container {
+      max-width: 320px;
+    }
+
+    &__title {
+      font-size: 27px;
+    }
+
+    &__list.slick-dotted.slick-slider {
+      padding-bottom: 75px;
+    }
+
+    .slick {
+      &-dots {
+        max-width: 170px;
+        bottom: 26px;
+
+        li {
+          width: 6%;
+        }
+      }
+
+      &-prev,
+      &-next {
+        width: 57px;
+      }
+    }
+  }
+}

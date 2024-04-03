@@ -1,0 +1,39 @@
+* {
+  font-family: 'rfDewiExtended', 'Arial', sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.1;
+  color: $dark;
+}
+
+select {
+  text-indent: 1px;
+  text-overflow: '';
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+section {
+  position: relative;
+}
+
+.gradient {
+  background: $gradient;
+}
+
+.background {
+  background: $main;
+}
+
+button {
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  section {
+    padding: 15px 0;
+  }
+}

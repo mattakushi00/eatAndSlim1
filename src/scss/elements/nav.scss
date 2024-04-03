@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  z-index: 99;
+  width: auto;
+
+  &__item {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    width: auto;
+    cursor: pointer;
+
+    &:before {
+      content: none;
+      display: block;
+      background: $main3;
+      position: absolute;
+      top: -7px;
+      left: 50%;
+      width: 8px;
+      aspect-ratio: 1 / 1;
+      transform: translateX(-50%);
+      border-radius: 50%;
+    }
+
+    &_active {
+      color: $main2;
+
+      &:before {
+        content: '';
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .nav {
+    display: none;
+  }
+}

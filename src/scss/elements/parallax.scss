@@ -1,0 +1,300 @@
+.parallax {
+  position: absolute;
+  z-index: 2;
+  transition: transform 1s ease-out;
+
+  &_1 {
+    top: 110px;
+    left: -22%;
+    max-width: 420px;
+  }
+
+  &_2 {
+    top: 100px;
+    right: -5%;
+    max-width: 145px;
+  }
+
+  &_2-bottom {
+    top: -6%;
+  }
+
+  &_3 {
+    top: 27%;
+    left: 49%;
+    max-width: 175px;
+  }
+
+  &_4 {
+    top: 44%;
+    right: -13%;
+    max-width: 195px;
+  }
+
+  &_5 {
+    bottom: -50px;
+    left: 30%;
+    max-width: 145px;
+  }
+
+  &_6 {
+    right: -30%;
+    bottom: 0;
+    max-width: 385px;
+  }
+
+  &_7 {
+    z-index: 3;
+    top: 50%;
+    left: -9%;
+    max-width: 194px;
+  }
+
+  &_8 {
+    top: 12%;
+    left: 49%;
+    max-width: 175px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .parallax {
+
+    &_1 {
+      left: -17%;
+      max-width: 270px;
+    }
+
+    &_2 {
+      max-width: 125px;
+    }
+
+    &_3 {
+      top: 26%;
+      left: 43%;
+      max-width: 125px;
+    }
+
+    &_4 {
+      max-width: 150px;
+    }
+
+    &_5 {
+      max-width: 125px;
+    }
+
+    &_6 {
+      right: -22%;
+      bottom: 8%;
+      max-width: 235px;
+    }
+
+    &_7 {
+      max-width: 124px;
+    }
+
+    &_8 {
+      max-width: 125px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .parallax {
+
+    &_1 {
+      left: -17%;
+      max-width: 230px;
+    }
+
+    &_2 {
+      max-width: 105px;
+    }
+
+    &_3 {
+      top: 22%;
+      left: 54%;
+    }
+
+    &_4 {
+      display: none;
+    }
+
+    &_5 {
+      bottom: 0;
+      left: 10%;
+    }
+
+    &_6 {
+      right: -30%;
+      bottom: 3%;
+    }
+
+    &_7 {
+      left: -13%;
+      max-width: 124px;
+    }
+
+    &_8 {
+      top: 8%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .parallax {
+
+    &_1 {
+      left: -25%;
+      max-width: 200px;
+    }
+
+    &_2 {
+      max-width: 65px;
+    }
+
+    &_3 {
+      max-width: 80px;
+    }
+
+    &_5 {
+      max-width: 70px;
+    }
+
+    &_6 {
+      bottom: 20%;
+      max-width: 170px;
+    }
+
+    &_8 {
+      max-width: 70px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .parallax {
+
+    &_1 {
+      left: -25%;
+      max-width: 200px;
+    }
+
+    &_2 {
+      max-width: 65px;
+    }
+
+    &_2-bottom {
+      top: 0;
+    }
+
+    &_3 {
+      top: 27%;
+    }
+
+    &_5 {
+      max-width: 70px;
+    }
+
+    &_6 {
+      bottom: 40%;
+    }
+
+    &_7 {
+      max-width: 90px;
+    }
+
+    &_8 {
+      top: 17%;
+      max-width: 70px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .parallax {
+
+    &_1 {
+      top: 10%;
+      left: -45%;
+      max-width: 200px;
+    }
+
+    &_2 {
+      max-width: 65px;
+    }
+
+    &_2-bottom {
+      top: 0;
+    }
+
+    &_3 {
+      top: 20%;
+    }
+
+    &_5 {
+      max-width: 70px;
+    }
+
+    &_6 {
+      z-index: 1;
+      top: 30%;
+      right: -45%;
+      bottom: auto;
+    }
+
+    &_7 {
+      display: none;
+    }
+
+    &_8 {
+      top: 10%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .parallax {
+
+    &_1 {
+      left: -25%;
+      max-width: 150px;
+      z-index: 1;
+    }
+
+    &_2 {
+      max-width: 65px;
+    }
+
+    &_2-bottom {
+      top: 0;
+    }
+
+    &_3 {
+      top: 20%;
+    }
+
+    &_5 {
+      max-width: 70px;
+    }
+
+    &_6 {
+      z-index: 0;
+      right: -35%;
+    }
+
+    &_7 {
+      display: none;
+    }
+
+    &_8 {
+      top: 10%;
+    }
+  }
+}
