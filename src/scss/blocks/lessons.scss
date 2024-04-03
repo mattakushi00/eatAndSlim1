@@ -52,6 +52,11 @@
   }
 
   .slick {
+
+    &-track {
+      align-items: stretch;
+    }
+
     &-dots li {
       background: $salad_light;
       width: 9%;

@@ -12,6 +12,12 @@ select {
   -moz-appearance: none;
 }
 
+.anchor {
+  position: relative;
+  visibility: hidden;
+  top: -100px;
+}
+
 section {
   position: relative;
 }
