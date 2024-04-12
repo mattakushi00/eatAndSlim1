@@ -22,6 +22,11 @@ section {
   position: relative;
 }
 
+.svg__clip {
+  width: 0;
+  height: 0;
+}
+
 .gradient {
   background: $gradient;
 }

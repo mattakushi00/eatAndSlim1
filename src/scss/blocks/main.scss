@@ -5,13 +5,6 @@
     padding: 40px 0;
   }
 
-  &__mask {
-    mask-image: url("../../assets/img/main__bg2.svg");
-    mask-size: cover;
-    mask-repeat: no-repeat;
-    mask-position: 50% 100%;
-  }
-
   &__layer {
     position: absolute;
     top: 0;
@@ -32,6 +25,18 @@
       position: relative;
       z-index: 3;
     }
+  }
+
+  &__mask {
+    width: 1920px;
+    clip-path: url(#mainClip);
+    -webkit-clip-path: url(#mainClip);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: 50% 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &__container {
