@@ -1,721 +1,743 @@
 <!doctype html>
 <html lang="it">
 <head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
-	<meta content="ie=edge" http-equiv="X-UA-Compatible">
-	<title>eatAndSlim</title>
-	<link href="assets/img/favicon.png" rel="shortcut icon">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>eatAndSlim</title>
+    <link href="assets/img/favicon.png" rel="shortcut icon">
 </head>
 <body>
 <main class="wrap">
 
-	<header class="header">
-		<div class="header__container container">
-			<svg class="header__logo" viewBox="0 0 1254 171" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M0 166.626V17.0792H152.472V53.9452H48.8158V74.9817H148.317V108.515H48.8158V129.76H152.472V166.626H0Z"/>
-				<path d="M219.93 171C187.525 171 162.39 158.295 162.39 129.135C162.39 95.81 197.496 86.229 233.225 86.229C253.582 86.229 272.901 88.7284 289.934 93.1023C289.311 76.8563 277.263 71.4409 252.128 71.4409C229.278 71.4409 207.882 75.19 178.385 82.0633L172.569 47.6967C200.196 41.6565 229.901 37.2826 261.268 37.2826C313.823 37.2826 338.335 54.9866 338.335 101.434V166.626H289.934V150.172C267.915 164.127 240.288 171 219.93 171ZM212.66 126.636C212.66 133.926 219.723 138.924 236.133 138.924C250.674 138.924 275.186 133.717 289.934 128.719V118.305C271.447 115.389 255.452 113.097 239.872 113.097C219.723 113.097 212.66 117.055 212.66 126.636Z"/>
-				<path d="M416.057 170.792C380.12 170.792 360.386 157.045 360.386 129.135V76.648H335.667V41.4482H360.386V18.5371L408.163 6.04019V41.4482H458.849V76.648H408.163V111.639C408.163 123.095 413.357 131.218 427.274 131.218C438.699 131.218 444.516 130.177 458.849 127.052V165.376C447.216 168.292 432.26 170.792 416.057 170.792Z"/>
-				<path d="M549.128 170.792C501.558 170.792 475.385 156.004 475.385 128.927C475.385 111.223 486.81 99.3508 516.93 89.1449C502.805 77.6894 497.196 68.1084 497.196 56.028C497.196 31.8672 521.292 16.6626 559.722 16.6626C595.866 16.6626 619.547 31.2424 619.547 53.3203C619.547 70.3995 605.837 82.4799 576.34 90.8112L614.977 117.471C620.378 109.557 623.909 99.5591 625.779 86.8538H662.962C660.885 106.849 653.822 123.512 642.605 136.633L685.812 166.626H628.064L614.977 157.462C597.32 166.209 575.301 170.792 549.128 170.792ZM523.577 121.845C523.577 133.926 536.041 139.758 560.345 139.758C569.901 139.758 578.21 138.924 585.48 137.05L536.664 102.892C528.147 108.099 523.577 114.347 523.577 121.845ZM541.026 59.1522C541.026 64.5676 544.35 68.7332 553.905 75.19L557.645 77.6894C575.509 72.4823 582.364 66.8587 582.364 58.5274C582.364 50.6127 574.678 45.6139 562.215 45.6139C549.128 45.6139 541.026 51.0292 541.026 59.1522Z"/>
-				<path d="M778.92 170.792C718.887 170.792 684.405 156.42 682.535 117.263H733.22C733.22 128.094 744.438 135.384 776.843 135.384C809.872 135.384 816.103 130.801 816.103 122.887C816.103 113.722 810.495 111.848 774.35 109.557L767.08 109.14C709.955 105.808 684.82 91.6443 684.82 59.5688C684.82 28.9513 717.433 13.5384 768.742 13.5384C827.321 13.5384 858.688 31.4507 860.557 64.5676H809.872C809.872 53.1121 796.369 48.9464 768.326 48.9464C741.945 48.9464 735.505 53.1121 735.505 59.5688C735.505 67.2753 741.114 70.1912 774.558 72.4823L783.075 73.1072C833.968 77.0646 866.789 82.4799 866.789 121.012C866.789 158.711 833.968 170.792 778.92 170.792Z"/>
-				<path d="M871.104 166.626V0H919.089V166.626H871.104Z"/>
-				<path d="M929.186 166.626V41.4482H977.171V166.626H929.186ZM929.186 28.743V0H977.171V28.743H929.186Z"/>
-				<path d="M1205.6 105.599C1205.6 83.9379 1196.04 77.2728 1177.35 77.2728C1159.28 77.2728 1144.53 83.7296 1144.53 104.974V166.626H1096.13V105.599C1096.13 83.9379 1086.78 77.2728 1068.08 77.2728C1049.8 77.2728 1035.26 83.7296 1035.26 104.974V166.626H986.655V41.4482H1035.26V62.0682C1048.77 46.447 1066.21 37.2826 1089.9 37.2826C1111.29 37.2826 1130.82 46.0304 1139.54 68.525C1153.67 48.9464 1172.57 37.2826 1199.16 37.2826C1228.24 37.2826 1254 53.5286 1254 97.6845V166.626H1205.6V105.599Z"/>
-			</svg>
-			<nav class="nav">
-				<a class="nav__item" href="#main">principale</a> <a class="nav__item" href="#about">informazioni sul corso</a>
-				<a class="nav__item" href="#expert">relatori</a> <a class="nav__item" href="#comments">recensioni</a>
-				<a class="nav__item" href="#faq">domande</a>
-			</nav>
-			<a href="" class="header__link" target="_blank">acquistare il corso</a>
-		</div>
-	</header>
+    <header class="header">
+        <div class="header__container container">
+            <svg class="header__logo" viewBox="0 0 1254 171" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 166.626V17.0792H152.472V53.9452H48.8158V74.9817H148.317V108.515H48.8158V129.76H152.472V166.626H0Z"/>
+                <path d="M219.93 171C187.525 171 162.39 158.295 162.39 129.135C162.39 95.81 197.496 86.229 233.225 86.229C253.582 86.229 272.901 88.7284 289.934 93.1023C289.311 76.8563 277.263 71.4409 252.128 71.4409C229.278 71.4409 207.882 75.19 178.385 82.0633L172.569 47.6967C200.196 41.6565 229.901 37.2826 261.268 37.2826C313.823 37.2826 338.335 54.9866 338.335 101.434V166.626H289.934V150.172C267.915 164.127 240.288 171 219.93 171ZM212.66 126.636C212.66 133.926 219.723 138.924 236.133 138.924C250.674 138.924 275.186 133.717 289.934 128.719V118.305C271.447 115.389 255.452 113.097 239.872 113.097C219.723 113.097 212.66 117.055 212.66 126.636Z"/>
+                <path d="M416.057 170.792C380.12 170.792 360.386 157.045 360.386 129.135V76.648H335.667V41.4482H360.386V18.5371L408.163 6.04019V41.4482H458.849V76.648H408.163V111.639C408.163 123.095 413.357 131.218 427.274 131.218C438.699 131.218 444.516 130.177 458.849 127.052V165.376C447.216 168.292 432.26 170.792 416.057 170.792Z"/>
+                <path d="M549.128 170.792C501.558 170.792 475.385 156.004 475.385 128.927C475.385 111.223 486.81 99.3508 516.93 89.1449C502.805 77.6894 497.196 68.1084 497.196 56.028C497.196 31.8672 521.292 16.6626 559.722 16.6626C595.866 16.6626 619.547 31.2424 619.547 53.3203C619.547 70.3995 605.837 82.4799 576.34 90.8112L614.977 117.471C620.378 109.557 623.909 99.5591 625.779 86.8538H662.962C660.885 106.849 653.822 123.512 642.605 136.633L685.812 166.626H628.064L614.977 157.462C597.32 166.209 575.301 170.792 549.128 170.792ZM523.577 121.845C523.577 133.926 536.041 139.758 560.345 139.758C569.901 139.758 578.21 138.924 585.48 137.05L536.664 102.892C528.147 108.099 523.577 114.347 523.577 121.845ZM541.026 59.1522C541.026 64.5676 544.35 68.7332 553.905 75.19L557.645 77.6894C575.509 72.4823 582.364 66.8587 582.364 58.5274C582.364 50.6127 574.678 45.6139 562.215 45.6139C549.128 45.6139 541.026 51.0292 541.026 59.1522Z"/>
+                <path d="M778.92 170.792C718.887 170.792 684.405 156.42 682.535 117.263H733.22C733.22 128.094 744.438 135.384 776.843 135.384C809.872 135.384 816.103 130.801 816.103 122.887C816.103 113.722 810.495 111.848 774.35 109.557L767.08 109.14C709.955 105.808 684.82 91.6443 684.82 59.5688C684.82 28.9513 717.433 13.5384 768.742 13.5384C827.321 13.5384 858.688 31.4507 860.557 64.5676H809.872C809.872 53.1121 796.369 48.9464 768.326 48.9464C741.945 48.9464 735.505 53.1121 735.505 59.5688C735.505 67.2753 741.114 70.1912 774.558 72.4823L783.075 73.1072C833.968 77.0646 866.789 82.4799 866.789 121.012C866.789 158.711 833.968 170.792 778.92 170.792Z"/>
+                <path d="M871.104 166.626V0H919.089V166.626H871.104Z"/>
+                <path d="M929.186 166.626V41.4482H977.171V166.626H929.186ZM929.186 28.743V0H977.171V28.743H929.186Z"/>
+                <path d="M1205.6 105.599C1205.6 83.9379 1196.04 77.2728 1177.35 77.2728C1159.28 77.2728 1144.53 83.7296 1144.53 104.974V166.626H1096.13V105.599C1096.13 83.9379 1086.78 77.2728 1068.08 77.2728C1049.8 77.2728 1035.26 83.7296 1035.26 104.974V166.626H986.655V41.4482H1035.26V62.0682C1048.77 46.447 1066.21 37.2826 1089.9 37.2826C1111.29 37.2826 1130.82 46.0304 1139.54 68.525C1153.67 48.9464 1172.57 37.2826 1199.16 37.2826C1228.24 37.2826 1254 53.5286 1254 97.6845V166.626H1205.6V105.599Z"/>
+            </svg>
+            <nav class="nav">
+                <a class="nav__item" href="#main">principale</a>
+                <a class="nav__item" href="#about">informazioni sul corso</a>
+                <a class="nav__item" href="#expert">relatori</a> <a class="nav__item" href="#comments">recensioni</a>
+                <a class="nav__item" href="#faq">domande</a>
+            </nav>
+            <a href="#send" class="header__link">acquistare il corso</a>
+        </div>
+    </header>
 
-	<section class="main">
-		<div class="anchor" id="main"></div>
-		<div class="main__layer main__layer_back main__mask">
-			<img src="assets/img/main__light.svg" alt="light" class="main__light">
-		</div>
-		<div class="main__layer main__layer_mid">
-			<div class="main__container main__container_mid container">
-				<img src="assets/img/main__item4.png" alt="parallax" class="parallax parallax_4">
-				<img src="assets/img/main__item5.png" alt="parallax" class="parallax parallax_5">
-			</div>
-		</div>
-		<div class="main__layer main__layer_front main__mask">
-			<div class="main__container container">
-				<picture>
-					<source srcset="assets/img/logo_mobile.svg" media="(max-width: 576px)">
-					<img src="assets/img/logo_white.svg" alt="logo" class="main__logo">
-				</picture>
-				<div class="main__row">
-					<h1 class="main__title">Dimagrisci mangiando!</h1>
-					<h2 class="main__subtitle">Un corso esclusivo tenuto da un importante istruttore di fitness e nutrizionista e da un medico endocrinologo praticante</h2>
-					<h1 class="main__text">Si può mangiare di tutto!</h1>
-					<img src="assets/img/main1.png" alt="image" class="main__img">
-				</div>
-				<div class="main__item">
-					<div class="main__card">
-						<div class="main__card-wrap">
-							<div class="main__card-text">TE LO STIAMO PRATICAMENTE REGALANDO!</div>
-							<svg class="main__arrow" width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M34.4746 3L48 15M48 15L34.4746 27M48 15L2 15" stroke="#272727" stroke-width="3" stroke-linecap="square"/>
-							</svg>
-							<div class="main__price">2€</div>
-							<a href="" target="_blank" class="main__link link">еacquistare il corso</a>
-						</div>
-					</div>
-					<div class="main__counter counter">
-						<h3 class="counter__title">Alla fine della promozione sono rimasti:</h3>
-						<div class="counter__list">
-							<div class="counter__item">
-								<div class="counter__value">00</div>
-								<div class="counter__text">giorni</div>
-							</div>
-							<div class="counter__item">
-								<div class="counter__value">00</div>
-								<div class="counter__text">ore</div>
-							</div>
-							<div class="counter__item">
-								<div class="counter__value counter__value_min">15</div>
-								<div class="counter__text">minuti</div>
-							</div>
-							<div class="counter__item">
-								<div class="counter__value counter__value_sec">00</div>
-								<div class="counter__text">secondi</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<img src="assets/img/main__item1.png" alt="parallax" class="parallax parallax_1">
-				<img src="assets/img/main__item2.png" alt="parallax" class="parallax parallax_2">
-				<img src="assets/img/main__item3.png" alt="parallax" class="parallax parallax_3">
-				<img src="assets/img/main__item6.png" alt="parallax" class="parallax parallax_6">
-			</div>
-		</div>
+    <section class="main">
+        <div class="anchor" id="main"></div>
+        <div class="main__layer main__layer_back main__mask">
+            <img src="assets/img/main__light.svg" alt="light" class="main__light">
+        </div>
+        <div class="main__layer main__layer_mid">
+            <div class="main__container main__container_mid container">
+                <img src="assets/img/main__item4.png" alt="parallax" class="parallax parallax_4">
+                <img src="assets/img/main__item5.png" alt="parallax" class="parallax parallax_5">
+            </div>
+        </div>
+        <div class="main__layer main__layer_front main__mask">
+            <div class="main__container container">
+                <picture>
+                    <source srcset="assets/img/logo_mobile.svg" media="(max-width: 576px)">
+                    <img src="assets/img/logo_white.svg" alt="logo" class="main__logo">
+                </picture>
+                <div class="main__row">
+                    <h1 class="main__title">Dimagrisci mangiando!</h1>
+                    <h2 class="main__subtitle">Un corso esclusivo tenuto da un importante istruttore di fitness e nutrizionista e da un medico endocrinologo praticante</h2>
+                    <h1 class="main__text">Si può mangiare di tutto!</h1>
+                    <img src="assets/img/main1.png" alt="image" class="main__img">
+                </div>
+                <div class="main__item">
+                    <div class="main__card">
+                        <div class="main__card-wrap">
+                            <div class="main__card-text">TE LO STIAMO PRATICAMENTE REGALANDO!</div>
+                            <svg class="main__arrow" width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M34.4746 3L48 15M48 15L34.4746 27M48 15L2 15" stroke="#272727" stroke-width="3" stroke-linecap="square"/>
+                            </svg>
+                            <div class="main__price">2€ <span>49€</span></div>
+                            <a href="#send" class="main__link link">еacquistare il corso</a>
+                        </div>
+                    </div>
+                    <div class="main__counter counter">
+                        <h3 class="counter__title">Alla fine della promozione sono rimasti:</h3>
+                        <div class="counter__list">
+                            <div class="counter__item">
+                                <div class="counter__value">00</div>
+                                <div class="counter__text">giorni</div>
+                            </div>
+                            <div class="counter__item">
+                                <div class="counter__value">00</div>
+                                <div class="counter__text">ore</div>
+                            </div>
+                            <div class="counter__item">
+                                <div class="counter__value counter__value_min">15</div>
+                                <div class="counter__text">minuti</div>
+                            </div>
+                            <div class="counter__item">
+                                <div class="counter__value counter__value_sec">00</div>
+                                <div class="counter__text">secondi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/img/main__item1.png" alt="parallax" class="parallax parallax_1">
+                <img src="assets/img/main__item2.png" alt="parallax" class="parallax parallax_2">
+                <img src="assets/img/main__item3.png" alt="parallax" class="parallax parallax_3">
+                <img src="assets/img/main__item6.png" alt="parallax" class="parallax parallax_6">
+            </div>
+        </div>
 
-	</section>
+    </section>
 
-	<section class="about">
-		<div class="anchor" id="about"></div>
-		<div class="about__container container">
-			<div class="about__header">
-				<h2 class="about__title">Cosa ti impedisce di essere nella tua forma ideale?</h2>
-				<h3 class="about__subtitle">Il peso in eccesso non è solo un problema estetico.</h3>
-				<p class="about__text">Qualsiasi quantità di depositi di grasso influisce negativamente su tutto l'organismo, anche se non ce ne accorgiamo. Le conseguenze si manifestano ogni giorno.</p>
-			</div>
-			<div class="about__list">
-				<div class="about__list-col">
-					<div class="about__list-item about__list-item_1">
-						<img src="assets/img/about__list1.svg" alt="icon" class="about__icon">
-						<div class="about__list-info">
-							<span class="about__list-text">Gonfiore</span>
-						</div>
-					</div>
-					<div class="about__list-item about__list-item_3">
-						<img src="assets/img/about__list3.svg" alt="icon" class="about__icon">
-						<div class="about__list-info">
-							<span class="about__list-text">Sudorazione</span> <span class="about__list-text">eccessiva</span>
-						</div>
-					</div>
-					<div class="about__list-item about__list-item_5">
-						<img src="assets/img/about__list5.svg" alt="icon" class="about__icon">
-						<div class="about__list-info">
-							<span class="about__list-text about__list-text_long">Problemi</span>
-							<span class="about__list-text about__list-text_long about__list-text_5">digestivi</span>
-						</div>
-					</div>
-				</div>
-				<div class="about__list-col">
-					<div class="about__list-item about__list-item_2">
-						<img src="assets/img/about__list2.svg" alt="icon" class="about__icon">
-						<div class="about__list-info">
-							<span class="about__list-text about__list-text_short">Scelte limitate</span>
-							<span class="about__list-text about__list-text_short">nell'abbigliamento</span>
-						</div>
-					</div>
+    <section class="about">
+        <div class="anchor" id="about"></div>
+        <div class="about__container container">
+            <div class="about__header">
+                <h2 class="about__title">Cosa ti impedisce di essere nella tua forma ideale?</h2>
+                <h3 class="about__subtitle">Il peso in eccesso non è solo un problema estetico.</h3>
+                <p class="about__text">Qualsiasi quantità di depositi di grasso influisce negativamente su tutto l'organismo, anche se non ce ne accorgiamo. Le conseguenze si manifestano ogni giorno.</p>
+            </div>
+            <div class="about__list">
+                <div class="about__list-col">
+                    <div class="about__list-item about__list-item_1">
+                        <img src="assets/img/about__list1.svg" alt="icon" class="about__icon">
+                        <div class="about__list-info">
+                            <span class="about__list-text">Gonfiore</span>
+                        </div>
+                    </div>
+                    <div class="about__list-item about__list-item_3">
+                        <img src="assets/img/about__list3.svg" alt="icon" class="about__icon">
+                        <div class="about__list-info">
+                            <span class="about__list-text">Sudorazione</span>
+                            <span class="about__list-text">eccessiva</span>
+                        </div>
+                    </div>
+                    <div class="about__list-item about__list-item_5">
+                        <img src="assets/img/about__list5.svg" alt="icon" class="about__icon">
+                        <div class="about__list-info">
+                            <span class="about__list-text about__list-text_long">Problemi</span>
+                            <span class="about__list-text about__list-text_long about__list-text_5">digestivi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__list-col">
+                    <div class="about__list-item about__list-item_2">
+                        <img src="assets/img/about__list2.svg" alt="icon" class="about__icon">
+                        <div class="about__list-info">
+                            <span class="about__list-text about__list-text_short">Scelte limitate</span>
+                            <span class="about__list-text about__list-text_short">nell'abbigliamento</span>
+                        </div>
+                    </div>
 
-					<div class="about__list-item about__list-item_4">
-						<img src="assets/img/about__list4.svg" alt="icon" class="about__icon">
-						<div class="about__list-info">
-							<span class="about__list-text">Affanno</span>
-						</div>
-					</div>
+                    <div class="about__list-item about__list-item_4">
+                        <img src="assets/img/about__list4.svg" alt="icon" class="about__icon">
+                        <div class="about__list-info">
+                            <span class="about__list-text">Affanno</span>
+                        </div>
+                    </div>
 
-					<div class="about__list-item about__list-item_6">
-						<img src="assets/img/about__list6.svg" alt="icon" class="about__icon about__icon_6">
-						<div class="about__list-info">
-							<span class="about__list-text">Metabolismo</span>
-							<span class="about__list-text about__list-text_6">lento</span>
-						</div>
-					</div>
-					<div class="about__list-item about__list-item_7">
-						<img src="assets/img/about__list7.svg" alt="icon" class="about__icon">
-						<div class="about__list-info">
-							<span class="about__list-text">Cellulite</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<img src="assets/img/about1.png" alt="image" class="about__img">
-	</section>
+                    <div class="about__list-item about__list-item_6">
+                        <img src="assets/img/about__list6.svg" alt="icon" class="about__icon about__icon_6">
+                        <div class="about__list-info">
+                            <span class="about__list-text">Metabolismo</span>
+                            <span class="about__list-text about__list-text_6">lento</span>
+                        </div>
+                    </div>
+                    <div class="about__list-item about__list-item_7">
+                        <img src="assets/img/about__list7.svg" alt="icon" class="about__icon">
+                        <div class="about__list-info">
+                            <span class="about__list-text">Cellulite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/img/about1.png" alt="image" class="about__img">
+    </section>
 
-	<div class="gradient">
+    <div class="gradient">
 
-		<section class="desc">
-			<div class="desc__container container">
-				<h2 class="desc__title">Lascia tutto questo nel passato. È arrivato il momento di cambiare</h2>
-				<div class="desc__row">
-					<div class="desc__left">
-						<img src="assets/img/desc1.jpg" alt="image" class="desc__img">
-						<img src="assets/img/descX.svg" alt="X" class="desc__img-x">
-					</div>
-					<div class="desc__right">
-						<h3 class="desc__subtitle">Dimentica le diete.</h3>
-						<h3 class="desc__subtitle desc__subtitle_big">Non funzionano</h3>
-						<p class="desc__text">Le diete consistono in divieti e qualsiasi limitazione lavora contro di noi. Se, ad esempio, ti imponi di non mangiare i pomodori, con il tempo il pomodoro diventerà l'alimento che più desideri mangiare.</p>
-					</div>
-				</div>
+        <section class="desc">
+            <div class="desc__container container">
+                <h2 class="desc__title">Lascia tutto questo nel passato. È arrivato il momento di cambiare</h2>
+                <div class="desc__row">
+                    <div class="desc__left">
+                        <img src="assets/img/desc1.jpg" alt="image" class="desc__img">
+                        <img src="assets/img/descX.svg" alt="X" class="desc__img-x">
+                    </div>
+                    <div class="desc__right">
+                        <h3 class="desc__subtitle">Dimentica le diete.</h3>
+                        <h3 class="desc__subtitle desc__subtitle_big">Non funzionano</h3>
+                        <p class="desc__text">Le diete consistono in divieti e qualsiasi limitazione lavora contro di noi. Se, ad esempio, ti imponi di non mangiare i pomodori, con il tempo il pomodoro diventerà l'alimento che più desideri mangiare.</p>
+                    </div>
+                </div>
 
-			</div>
-		</section>
+            </div>
+        </section>
 
-		<section class="base">
-			<div class="base__container container">
-				<div class="base__item">
-					<img src="assets/img/base1.png" alt="dish" class="base__img base__img_left">
-					<p class="base__text">Il corso “Dimagrisci mangiando” utilizza un approccio completamente diverso alla perdita di peso.</p>
-					<img src="assets/img/base__arrow.svg" alt="arrow" class="base__arrow">
-					<p class="base__text">Per ottenere i parametri ideali devi...
-						<span class="base__text base__text_color">MANGIARE IN GRANDI PORZIONI!</span></p>
-					<img src="assets/img/base2.png" alt="dish" class="base__img base__img_right">
-				</div>
-				<a href="" target="_blank" class="base__link link link_long">acquistare il corso</a>
-			</div>
-		</section>
+        <section class="base">
+            <div class="base__container container">
+                <div class="base__item">
+                    <img src="assets/img/base1.png" alt="dish" class="base__img base__img_left">
+                    <p class="base__text">Il corso “Dimagrisci mangiando” utilizza un approccio completamente diverso alla perdita di peso.</p>
+                    <img src="assets/img/base__arrow.svg" alt="arrow" class="base__arrow">
+                    <p class="base__text">Per ottenere i parametri ideali devi...
+                        <span class="base__text base__text_color">MANGIARE IN GRANDI PORZIONI!</span></p>
+                    <img src="assets/img/base2.png" alt="dish" class="base__img base__img_right">
+                </div>
+                <a href="#send" class="base__link link link_long">acquistare il corso</a>
+            </div>
+        </section>
 
-		<section class="result result_1">
-			<div class="result__bg"></div>
-			<div class="result__list result__list_1">
-				<img src="assets/img/result1.jpg" alt="result" class="result__item">
-				<img src="assets/img/result2.jpg" alt="result" class="result__item">
-				<img src="assets/img/result3.jpg" alt="result" class="result__item">
-				<img src="assets/img/result4.jpg" alt="result" class="result__item">
-				<img src="assets/img/result5.jpg" alt="result" class="result__item">
-				<img src="assets/img/result6.jpg" alt="result" class="result__item">
-				<img src="assets/img/result7.jpg" alt="result" class="result__item">
-				<img src="assets/img/result8.jpg" alt="result" class="result__item">
-			</div>
-			<div class="result__bg result__bg_2"></div>
-		</section>
+        <section class="result result_1">
+            <div class="result__bg"></div>
+            <div class="result__list result__list_1">
+                <img src="assets/img/result1.jpg" alt="result" class="result__item">
+                <img src="assets/img/result2.jpg" alt="result" class="result__item">
+                <img src="assets/img/result3.jpg" alt="result" class="result__item">
+                <img src="assets/img/result4.jpg" alt="result" class="result__item">
+                <img src="assets/img/result5.jpg" alt="result" class="result__item">
+                <img src="assets/img/result6.jpg" alt="result" class="result__item">
+                <img src="assets/img/result7.jpg" alt="result" class="result__item">
+                <img src="assets/img/result8.jpg" alt="result" class="result__item">
+            </div>
+            <div class="result__bg result__bg_2"></div>
+        </section>
 
-		<section class="expert">
-			<div class="anchor" id="expert"></div>
-			<div class="expert__container container">
-				<h2 class="expert__title">Relatori</h2>
-				<div class="expert__row">
-					<div class="expert__info">
-						<p class="expert__info-text">
-							<b>L'istruttore di fitness Ian Fisher e il nutrizionista Oliver Harris</b> ti diranno esattamente cosa mangiare e a che ora di preferenza per provare sempre una sensazione di sazietà e continuare a perdere peso.
-						</p>
-					</div>
-					<div class="expert__list">
-						<div class="expert__item">
-							<img src="assets/img/expert1.jpg" alt="expert" class="expert__img">
-							<p class="expert__name">Ian Fisher</p>
-							<p class="expert__list-text"> Istruttore di fitness e nutrizionista con 15 anni di esperienza. Ian aiuta uomini e donne di tutte le età a rafforzare i propri muscoli, ad aumentare la massa muscolare e a diminuire quella grassa.</p>
-						</div>
-						<div class="expert__item">
-							<img src="assets/img/expert2.jpg" alt="expert" class="expert__img">
-							<p class="expert__name">Oliver Harris</p>
-							<p class="expert__list-text">Endocrinologo praticante. Da più di 10 anni aiuta i suoi pazienti a liberarsi dall'insulino-resistenza, abbassare i livelli di colesterolo e perdere il peso in eccesso senza ricorrere a diete e limitazioni.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+        <section class="expert">
+            <div class="anchor" id="expert"></div>
+            <div class="expert__container container">
+                <h2 class="expert__title">Relatori</h2>
+                <div class="expert__row">
+                    <div class="expert__info">
+                        <p class="expert__info-text">
+                            <b>L'istruttore di fitness Ian Fisher e il nutrizionista Oliver Harris</b> ti diranno esattamente cosa mangiare e a che ora di preferenza per provare sempre una sensazione di sazietà e continuare a perdere peso.
+                        </p>
+                    </div>
+                    <div class="expert__list">
+                        <div class="expert__item">
+                            <img src="assets/img/expert1.jpg" alt="expert" class="expert__img">
+                            <p class="expert__name">Ian Fisher</p>
+                            <p class="expert__list-text"> Istruttore di fitness e nutrizionista con 15 anni di esperienza. Ian aiuta uomini e donne di tutte le età a rafforzare i propri muscoli, ad aumentare la massa muscolare e a diminuire quella grassa.</p>
+                        </div>
+                        <div class="expert__item">
+                            <img src="assets/img/expert2.jpg" alt="expert" class="expert__img">
+                            <p class="expert__name">Oliver Harris</p>
+                            <p class="expert__list-text">Endocrinologo praticante. Da più di 10 anni aiuta i suoi pazienti a liberarsi dall'insulino-resistenza, abbassare i livelli di colesterolo e perdere il peso in eccesso senza ricorrere a diete e limitazioni.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<section class="lessons">
-			<div class="lessons__container container">
-				<h2 class="lessons__title">Dal peso in eccesso alla forma ideale in 8 video</h2>
-				<div class="lessons__list">
-					<div class="lessons__list-item">
-						<img src="assets/img/lessons1.jpg" alt="lessons" class="lessons__list-img">
-						<div class="lessons__list-info">
-							<h3 class="lessons__list-title">Lezione 1</h3>
-							<p class="lessons__list-text">Come perdere peso senza eliminare i dolci, le farine e i grassi?</p>
-						</div>
-					</div>
-					<div class="lessons__list-item">
-						<img src="assets/img/lessons2.jpg" alt="lessons" class="lessons__list-img">
-						<div class="lessons__list-info">
-							<h3 class="lessons__list-title">Lezione 2</h3>
-							<p class="lessons__list-text">Come eliminare la cellulite? 3 semplici regole</p>
-						</div>
-					</div>
-					<div class="lessons__list-item">
-						<img src="assets/img/lessons3.jpg" alt="lessons" class="lessons__list-img">
-						<div class="lessons__list-info">
-							<h3 class="lessons__list-title">Lezione 3</h3>
-							<p class="lessons__list-text">Come non riprendere i chili persi?</p>
-						</div>
-					</div>
-					<div class="lessons__list-item">
-						<img src="assets/img/lessons4.jpg" alt="lessons" class="lessons__list-img">
-						<div class="lessons__list-info">
-							<h3 class="lessons__list-title">Lezione 4</h3>
-							<p class="lessons__list-text">Vitamine e integratori che aiutano a perdere peso</p>
-						</div>
-					</div>
-					<div class="lessons__list-item">
-						<img src="assets/img/lessons5.jpg" alt="lessons" class="lessons__list-img">
-						<div class="lessons__list-info">
-							<h3 class="lessons__list-title">Lezione 5</h3>
-							<p class="lessons__list-text">Come liberarsi dalla pesantezza e dal gonfiore intestinale</p>
-						</div>
-					</div>
-					<div class="lessons__list-item">
-						<img src="assets/img/lessons6.jpg" alt="lessons" class="lessons__list-img">
-						<div class="lessons__list-info">
-							<h3 class="lessons__list-title">Lezione 6</h3>
-							<p class="lessons__list-text">Come liberarsi dai gonfiori?</p>
-						</div>
-					</div>
-					<div class="lessons__list-item">
-						<img src="assets/img/lessons7.jpg" alt="lessons" class="lessons__list-img">
-						<div class="lessons__list-info">
-							<h3 class="lessons__list-title">Lezione 7</h3>
-							<p class="lessons__list-text">Nozioni di base sulla salute delle donne</p>
-						</div>
-					</div>
-					<div class="lessons__list-item">
-						<img src="assets/img/lessons8.jpg" alt="lessons" class="lessons__list-img">
-						<div class="lessons__list-info">
-							<h3 class="lessons__list-title">Lezione 8</h3>
-							<p class="lessons__list-text">Nozioni di base sulla salute degli uomini</p>
-						</div>
-					</div>
-				</div>
-				<a href="" target="_blank" class="link link_long">acquistare il corso</a>
-			</div>
-		</section>
+        <section class="lessons">
+            <div class="lessons__container container">
+                <h2 class="lessons__title">Dal peso in eccesso alla forma ideale in 8 video</h2>
+                <div class="lessons__list">
+                    <div class="lessons__list-item">
+                        <img src="assets/img/lessons1.jpg" alt="lessons" class="lessons__list-img">
+                        <div class="lessons__list-info">
+                            <h3 class="lessons__list-title">Lezione 1</h3>
+                            <p class="lessons__list-text">Come perdere peso senza eliminare i dolci, le farine e i grassi?</p>
+                        </div>
+                    </div>
+                    <div class="lessons__list-item">
+                        <img src="assets/img/lessons2.jpg" alt="lessons" class="lessons__list-img">
+                        <div class="lessons__list-info">
+                            <h3 class="lessons__list-title">Lezione 2</h3>
+                            <p class="lessons__list-text">Come eliminare la cellulite? 3 semplici regole</p>
+                        </div>
+                    </div>
+                    <div class="lessons__list-item">
+                        <img src="assets/img/lessons3.jpg" alt="lessons" class="lessons__list-img">
+                        <div class="lessons__list-info">
+                            <h3 class="lessons__list-title">Lezione 3</h3>
+                            <p class="lessons__list-text">Come non riprendere i chili persi?</p>
+                        </div>
+                    </div>
+                    <div class="lessons__list-item">
+                        <img src="assets/img/lessons4.jpg" alt="lessons" class="lessons__list-img">
+                        <div class="lessons__list-info">
+                            <h3 class="lessons__list-title">Lezione 4</h3>
+                            <p class="lessons__list-text">Vitamine e integratori che aiutano a perdere peso</p>
+                        </div>
+                    </div>
+                    <div class="lessons__list-item">
+                        <img src="assets/img/lessons5.jpg" alt="lessons" class="lessons__list-img">
+                        <div class="lessons__list-info">
+                            <h3 class="lessons__list-title">Lezione 5</h3>
+                            <p class="lessons__list-text">Come liberarsi dalla pesantezza e dal gonfiore intestinale</p>
+                        </div>
+                    </div>
+                    <div class="lessons__list-item">
+                        <img src="assets/img/lessons6.jpg" alt="lessons" class="lessons__list-img">
+                        <div class="lessons__list-info">
+                            <h3 class="lessons__list-title">Lezione 6</h3>
+                            <p class="lessons__list-text">Come liberarsi dai gonfiori?</p>
+                        </div>
+                    </div>
+                    <div class="lessons__list-item">
+                        <img src="assets/img/lessons7.jpg" alt="lessons" class="lessons__list-img">
+                        <div class="lessons__list-info">
+                            <h3 class="lessons__list-title">Lezione 7</h3>
+                            <p class="lessons__list-text">Nozioni di base sulla salute delle donne</p>
+                        </div>
+                    </div>
+                    <div class="lessons__list-item">
+                        <img src="assets/img/lessons8.jpg" alt="lessons" class="lessons__list-img">
+                        <div class="lessons__list-info">
+                            <h3 class="lessons__list-title">Lezione 8</h3>
+                            <p class="lessons__list-text">Nozioni di base sulla salute degli uomini</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#send" class="link link_long">acquistare il corso</a>
+            </div>
+        </section>
 
-	</div>
+    </div>
 
-	<section class="comments">
-		<div class="anchor" id="comments"></div>
-		<div class="comments__container container">
-			<h2 class="comments__title">Recensioni:</h2>
-			<div class="comments__list">
-				<div class="comments__block">
-					<div class="comments__list-item">
-						<img src="assets/img/avatar1.jpg" alt="avatar" class="comments__avatar">
-						<div class="comments__info">
-							<p class="comments__text">Il corso mi è piaciuto per la sua semplicità e facilità di accesso. Non ci sono compiti super difficili da svolgere né regole impossibili da applicare. Mi ha fornito molte informazioni utili che mi hanno veramente aiutata a perdere peso e a liberarmi dal prediabete. Ho perso 16 chili e il mio nuovo peso è stabile da più di sei mesi. Per me questo non è un corso, ma un dono del destino. Sono ancora in estasi!</p>
-							<div class="comments__footer">
-								<p class="comments__name">Francesca, 43 anni</p>
-								<div class="comments__rating">
-									<img src="assets/img/stars.svg" alt="rating" class="comments__stars">
-									<p class="comments__rating-value">5/5</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="comments__block">
-					<div class="comments__list-item">
-						<img src="assets/img/avatar2.jpg" alt="avatar" class="comments__avatar">
-						<div class="comments__info">
-							<p class="comments__text">Per me è sempre stato difficile seguire delle diete, finché mi attengo alle restrizioni il peso diminuisce ma non appena torno a mangiare lo stesso di sempre ritorna e prendo ancora più chili. In questo senso, questo corso mi ha salvato - adesso mangio il cibo di sempre, ma dimagrisco. Ma soprattutto, non mi sento affamato. Sono sazio e mi sento benissimo.</p>
-							<div class="comments__footer">
-								<p class="comments__name">Andrea, 39 anni</p>
-								<div class="comments__rating">
-									<img src="assets/img/stars.svg" alt="rating" class="comments__stars">
-									<p class="comments__rating-value">5/5</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="comments__block">
-					<div class="comments__list-item">
-						<img src="assets/img/avatar3.jpg" alt="avatar" class="comments__avatar">
-						<div class="comments__info">
-							<p class="comments__text">Dopo aver cambiato lavoro, ho cominciato ad ingrassare. Per un anno e mezzo ho dormito poco, praticamente non ho fatto movimento e ho mangiato quello che capitava. Il risultato di questo stile di vita è stata una pancia gigante dalla quale non riuscivo a liberarmi, fino a quando non mi sono imbattuto nel corso “Dimagrisci mangiando”. Nonostante la mia agenda piena, seguire il corso per me è stato facile. Ho cominciato subito a seguire le raccomandazioni del medico e del nutrizionista. Anche il risultato non si è fatto attendere - il primo mese ho perso 12 chili e il secondo mese 10. Sono soddisfatto del risultato.</p>
-							<div class="comments__footer">
-								<p class="comments__name">Alessando, 47 anni</p>
-								<div class="comments__rating">
-									<img src="assets/img/stars.svg" alt="rating" class="comments__stars">
-									<p class="comments__rating-value">5/5</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="comments__arrows">
-				<div class="comments__arrow comments__arrow_prev">
-					<img src="assets/img/slider__arrow-prev.svg" alt="arrow" class="comments__arrow-img">
-					<p class="comments__arrow-text">Recensione precedente</p>
-				</div>
-				<div class="comments__arrow comments__arrow_next">
-					<p class="comments__arrow-text comments__arrow-text_right">Recensione successiva</p>
-					<img src="assets/img/slider__arrow-prev.svg" alt="arrow" class="comments__arrow-img comments__arrow-img_next">
-				</div>
-			</div>
-			<a href="" target="_blank" class="link link_long">acquistare il corso</a>
-		</div>
-	</section>
+    <section class="comments">
+        <div class="anchor" id="comments"></div>
+        <div class="comments__container container">
+            <h2 class="comments__title">Recensioni:</h2>
+            <div class="comments__list">
+                <div class="comments__block">
+                    <div class="comments__list-item">
+                        <img src="assets/img/avatar1.jpg" alt="avatar" class="comments__avatar">
+                        <div class="comments__info">
+                            <p class="comments__text">Il corso mi è piaciuto per la sua semplicità e facilità di accesso. Non ci sono compiti super difficili da svolgere né regole impossibili da applicare. Mi ha fornito molte informazioni utili che mi hanno veramente aiutata a perdere peso e a liberarmi dal prediabete. Ho perso 16 chili e il mio nuovo peso è stabile da più di sei mesi. Per me questo non è un corso, ma un dono del destino. Sono ancora in estasi!</p>
+                            <div class="comments__footer">
+                                <p class="comments__name">Francesca, 43 anni</p>
+                                <div class="comments__rating">
+                                    <img src="assets/img/stars.svg" alt="rating" class="comments__stars">
+                                    <p class="comments__rating-value">5/5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments__block">
+                    <div class="comments__list-item">
+                        <img src="assets/img/avatar2.jpg" alt="avatar" class="comments__avatar">
+                        <div class="comments__info">
+                            <p class="comments__text">Per me è sempre stato difficile seguire delle diete, finché mi attengo alle restrizioni il peso diminuisce ma non appena torno a mangiare lo stesso di sempre ritorna e prendo ancora più chili. In questo senso, questo corso mi ha salvato - adesso mangio il cibo di sempre, ma dimagrisco. Ma soprattutto, non mi sento affamato. Sono sazio e mi sento benissimo.</p>
+                            <div class="comments__footer">
+                                <p class="comments__name">Andrea, 39 anni</p>
+                                <div class="comments__rating">
+                                    <img src="assets/img/stars.svg" alt="rating" class="comments__stars">
+                                    <p class="comments__rating-value">5/5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments__block">
+                    <div class="comments__list-item">
+                        <img src="assets/img/avatar3.jpg" alt="avatar" class="comments__avatar">
+                        <div class="comments__info">
+                            <p class="comments__text">Dopo aver cambiato lavoro, ho cominciato ad ingrassare. Per un anno e mezzo ho dormito poco, praticamente non ho fatto movimento e ho mangiato quello che capitava. Il risultato di questo stile di vita è stata una pancia gigante dalla quale non riuscivo a liberarmi, fino a quando non mi sono imbattuto nel corso “Dimagrisci mangiando”. Nonostante la mia agenda piena, seguire il corso per me è stato facile. Ho cominciato subito a seguire le raccomandazioni del medico e del nutrizionista. Anche il risultato non si è fatto attendere - il primo mese ho perso 12 chili e il secondo mese 10. Sono soddisfatto del risultato.</p>
+                            <div class="comments__footer">
+                                <p class="comments__name">Alessando, 47 anni</p>
+                                <div class="comments__rating">
+                                    <img src="assets/img/stars.svg" alt="rating" class="comments__stars">
+                                    <p class="comments__rating-value">5/5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comments__arrows">
+                <div class="comments__arrow comments__arrow_prev">
+                    <img src="assets/img/slider__arrow-prev.svg" alt="arrow" class="comments__arrow-img">
+                    <p class="comments__arrow-text">Recensione precedente</p>
+                </div>
+                <div class="comments__arrow comments__arrow_next">
+                    <p class="comments__arrow-text comments__arrow-text_right">Recensione successiva</p>
+                    <img src="assets/img/slider__arrow-prev.svg" alt="arrow" class="comments__arrow-img comments__arrow-img_next">
+                </div>
+            </div>
+            <a href="#send" class="link link_long">acquistare il corso</a>
+        </div>
+    </section>
 
-	<div class="background">
+    <div class="background">
 
-		<section class="result result_2">
-			<div class="result__list result__list_2">
-				<img src="assets/img/result9.jpg" alt="result" class="result__item result__item_small">
-				<img src="assets/img/result10.jpg" alt="result" class="result__item result__item_small">
-				<img src="assets/img/result11.jpg" alt="result" class="result__item result__item_small">
-				<img src="assets/img/result12.jpg" alt="result" class="result__item result__item_small">
-				<img src="assets/img/result13.jpg" alt="result" class="result__item result__item_small">
-				<img src="assets/img/result14.jpg" alt="result" class="result__item result__item_small">
-				<img src="assets/img/result15.jpg" alt="result" class="result__item result__item_small">
-				<img src="assets/img/result16.jpg" alt="result" class="result__item result__item_small">
-			</div>
-		</section>
+        <section class="result result_2">
+            <div class="result__list result__list_2">
+                <img src="assets/img/result9.jpg" alt="result" class="result__item result__item_small">
+                <img src="assets/img/result10.jpg" alt="result" class="result__item result__item_small">
+                <img src="assets/img/result11.jpg" alt="result" class="result__item result__item_small">
+                <img src="assets/img/result12.jpg" alt="result" class="result__item result__item_small">
+                <img src="assets/img/result13.jpg" alt="result" class="result__item result__item_small">
+                <img src="assets/img/result14.jpg" alt="result" class="result__item result__item_small">
+                <img src="assets/img/result15.jpg" alt="result" class="result__item result__item_small">
+                <img src="assets/img/result16.jpg" alt="result" class="result__item result__item_small">
+            </div>
+        </section>
 
-		<section class="faq">
-			<div class="anchor" id="faq"></div>
-			<div class="faq__container container">
-				<img src="assets/img/faq1.png" alt="image" class="faq__img">
-				<div class="faq__list">
-					<div class="faq__item">
-						<h4 class="faq__list-title">Per seguire il corso bisogna fare sport?</h4>
-						<p class="faq__list-text collapse">No, non è necessario fare sport. Non è necessario fare niente! Nel corso, riceverai una serie di raccomandazioni semplici da seguire. Proprio grazie a queste, i chili persi non torneranno. Tutto questo, senza bisogno di esercizio fisico.</p>
-					</div>
-					<div class="faq__item">
-						<h4 class="faq__list-title">Quanti chili si possono perdere con questo metodo?</h4>
-						<p class="faq__list-text collapse">Tutto dipende dal peso iniziale. Se c'è molto peso in eccesso, andrà via più velocemente. Se invece hai bisogno di perdere solo qualche chilo, potrebbe esserci bisogno di un po' più tempo. In media, gli studenti del corso perdono 10-15 chili in un mese.</p>
-					</div>
-					<div class="faq__item">
-						<h4 class="faq__list-title">I chili persi torneranno?</h4>
-						<p class="faq__list-text collapse">No, i chili persi non torneranno. Nel corso otterrai delle raccomandazioni che ti aiuteranno a mantenere il nuovo peso per sempre.</p>
-					</div>
+        <section class="faq">
+            <div class="anchor" id="faq"></div>
+            <div class="faq__container container">
+                <img src="assets/img/faq1.png" alt="image" class="faq__img">
+                <div class="faq__list">
+                    <div class="faq__item">
+                        <h4 class="faq__list-title">Per seguire il corso bisogna fare sport?</h4>
+                        <p class="faq__list-text collapse">No, non è necessario fare sport. Non è necessario fare niente! Nel corso, riceverai una serie di raccomandazioni semplici da seguire. Proprio grazie a queste, i chili persi non torneranno. Tutto questo, senza bisogno di esercizio fisico.</p>
+                    </div>
+                    <div class="faq__item">
+                        <h4 class="faq__list-title">Quanti chili si possono perdere con questo metodo?</h4>
+                        <p class="faq__list-text collapse">Tutto dipende dal peso iniziale. Se c'è molto peso in eccesso, andrà via più velocemente. Se invece hai bisogno di perdere solo qualche chilo, potrebbe esserci bisogno di un po' più tempo. In media, gli studenti del corso perdono 10-15 chili in un mese.</p>
+                    </div>
+                    <div class="faq__item">
+                        <h4 class="faq__list-title">I chili persi torneranno?</h4>
+                        <p class="faq__list-text collapse">No, i chili persi non torneranno. Nel corso otterrai delle raccomandazioni che ti aiuteranno a mantenere il nuovo peso per sempre.</p>
+                    </div>
 
-					<div class="faq__item">
-						<h4 class="faq__list-title">Dovrò rinunciare ai dolci?</h4>
-						<p class="faq__list-text collapse">No! Non dovrai rinunciare a niente. Nel corso otterrai delle conoscenze che ti permetteranno di mangiare qualsiasi piatto e continuare a dimagrire.</p>
-					</div>
+                    <div class="faq__item">
+                        <h4 class="faq__list-title">Dovrò rinunciare ai dolci?</h4>
+                        <p class="faq__list-text collapse">No! Non dovrai rinunciare a niente. Nel corso otterrai delle conoscenze che ti permetteranno di mangiare qualsiasi piatto e continuare a dimagrire.</p>
+                    </div>
 
-					<div class="faq__item">
-						<h4 class="faq__list-title">Il corso può essere seguito da persone di qualsiasi età?</h4>
-						<p class="faq__list-text collapse">Sì, le informazioni contenute nel corso si adattano a persone di qualsiasi età. L'unica eccezione sono i minori di 18 anni ai quali si raccomanda di rivolgersi ad un medico endocrinologo.</p>
-					</div>
-				</div>
-			</div>
-		</section>
+                    <div class="faq__item">
+                        <h4 class="faq__list-title">Il corso può essere seguito da persone di qualsiasi età?</h4>
+                        <p class="faq__list-text collapse">Sì, le informazioni contenute nel corso si adattano a persone di qualsiasi età. L'unica eccezione sono i minori di 18 anni ai quali si raccomanda di rivolgersi ad un medico endocrinologo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<section class="main main_bottom">
-			<div class="anchor" id="order"></div>
-			<div class="main__layer main__layer_back">
-				<img src="assets/img/main__light.svg" alt="light" class="main__light main__light_bottom">
-			</div>
-			<div class="main__layer main__layer_front">
-				<div class="main__container main__container_bottom container">
-					<picture>
-						<source srcset="assets/img/logo_mobile.svg" media="(max-width: 576px)">
-						<img src="assets/img/logo_white.svg" alt="logo" class="main__logo">
-					</picture>
-					<div class="main__row">
-						<h1 class="main__title">Dimagrisci mangiando!</h1>
-						<h2 class="main__subtitle">Un corso esclusivo tenuto da un importante istruttore di fitness e nutrizionista e da un medico endocrinologo praticante</h2>
-						<h1 class="main__text">Si può mangiare di tutto!</h1>
-						<img src="assets/img/main1.png" alt="image" class="main__img main__img_shift">
-					</div>
-					<div class="main__item">
-						<div class="main__card">
-							<div class="main__card-wrap">
-								<div class="main__card-text">TE LO STIAMO PRATICAMENTE REGALANDO!</div>
-								<svg class="main__arrow" width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M34.4746 3L48 15M48 15L34.4746 27M48 15L2 15" stroke="#272727" stroke-width="3" stroke-linecap="square"/>
-								</svg>
-								<div class="main__price">2€</div>
-								<a href="" target="_blank" class="main__link link">еacquistare il corso</a>
-							</div>
-						</div>
-						<div class="main__counter counter">
-							<h3 class="counter__title">Alla fine della promozione sono rimasti:</h3>
-							<div class="counter__list">
-								<div class="counter__item">
-									<div class="counter__value">00</div>
-									<div class="counter__text">giorni</div>
-								</div>
-								<div class="counter__item">
-									<div class="counter__value">00</div>
-									<div class="counter__text">ore</div>
-								</div>
-								<div class="counter__item">
-									<div class="counter__value counter__value_min">15</div>
-									<div class="counter__text">minuti</div>
-								</div>
-								<div class="counter__item">
-									<div class="counter__value counter__value_sec">00</div>
-									<div class="counter__text">secondi</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<img src="assets/img/main__item1.png" alt="parallax" class="parallax parallax_1">
-					<img src="assets/img/main__item2.png" alt="parallax" class="parallax parallax_2 parallax_2-bottom">
-					<img src="assets/img/main__item4.png" alt="parallax" class="parallax parallax_4">
-					<img src="assets/img/main__item5.png" alt="parallax" class="parallax parallax_7">
-					<img src="assets/img/main__item6.png" alt="parallax" class="parallax parallax_6">
-					<img src="assets/img/main__item3.png" alt="parallax" class="parallax parallax_8">
-				</div>
-			</div>
-		</section>
-	</div>
+        <section class="main main_bottom">
+            <div class="anchor" id="order"></div>
+            <div class="main__layer main__layer_back">
+                <img src="assets/img/main__light.svg" alt="light" class="main__light main__light_bottom">
+            </div>
+            <div class="main__layer main__layer_front">
+                <div class="main__container main__container_send main__container_bottom container">
+                    <picture>
+                        <source srcset="assets/img/logo_mobile.svg" media="(max-width: 576px)">
+                        <img src="assets/img/logo_white.svg" alt="logo" class="main__logo">
+                    </picture>
+                    <div class="main__row">
+                        <h1 class="main__title">Dimagrisci mangiando!</h1>
+                        <h2 class="main__subtitle">Un corso esclusivo tenuto da un importante istruttore di fitness e nutrizionista e da un medico endocrinologo praticante</h2>
+                        <h1 class="main__text">Si può mangiare di tutto!</h1>
+                        <img src="assets/img/main1.png" alt="image" class="main__img main__img_shift">
+                    </div>
+                    <div class="main__item">
+                        <form class="form">
+                            <div class="form__wrap">
+                                <div class="main__card main__card_transparent">
+                                    <div class="main__card-wrap">
+                                        <div class="main__card-text">TE LO STIAMO PRATICAMENTE REGALANDO!</div>
+                                        <svg class="main__arrow" width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M34.4746 3L48 15M48 15L34.4746 27M48 15L2 15" stroke="#272727" stroke-width="3" stroke-linecap="square"/>
+                                        </svg>
+                                        <div class="main__price" id="send">2€ <span>49€</span></div>
+                                    </div>
+                                </div>
 
-	<footer class="footer">
-		<div class="footer__container container">
-			<div class="footer__text">Eat&Slim</div>
-			<div class="footer__text footer__date"></div>
-			<div class="popup__link">
-				<span class="popup__open privacy__open footer__text">Privacy policy</span>
-				<span class="popup__open user__open footer__text">User agreement </span>
-				<span class="popup__open term__open footer__text">Term of use</span>
-			</div>
-		</div>
-	</footer>
-	<div class="svg__clip">
-		<svg>
-			<defs>
-				<clipPath id="mainClip" clipPathUnits="objectBoundingBox">
-					<path d="M1,0 H0 L0,0.856 L0.5,1 L1,0.856 V0" fill="#A2C350"/>
-				</clipPath>
-			</defs>
-		</svg>
-	</div>
+                                <input type="text" class="form__input" name="name" placeholder="Il vostro nome">
+                                <input type="text" class="form__input" name="phone" placeholder="il vostro numero di telefono">
+                                <div class="popup__form">
+                                    <input type="checkbox" id="privacy" class="popup__checkbox">
+                                    <div class="popup__form-info">
+                                        <label for="privacy" class="popup__label">Autorizzo il trattamento dei miei dati personali con in conformità con la</label>
+                                        <span class="popup__form-link privacy__open">politica sulla privacy</span>
+                                    </div>
+                                </div>
+                                <button class="link link_long">еacquistare il corso</button>
+
+                            </div>
+                        </form>
+
+                        <div class="main__counter counter">
+                            <h3 class="counter__title">Alla fine della promozione sono rimasti:</h3>
+                            <div class="counter__list">
+                                <div class="counter__item">
+                                    <div class="counter__value">00</div>
+                                    <div class="counter__text">giorni</div>
+                                </div>
+                                <div class="counter__item">
+                                    <div class="counter__value">00</div>
+                                    <div class="counter__text">ore</div>
+                                </div>
+                                <div class="counter__item">
+                                    <div class="counter__value counter__value_min">15</div>
+                                    <div class="counter__text">minuti</div>
+                                </div>
+                                <div class="counter__item">
+                                    <div class="counter__value counter__value_sec">00</div>
+                                    <div class="counter__text">secondi</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img/main__item1.png" alt="parallax" class="parallax parallax_1">
+                    <img src="assets/img/main__item2.png" alt="parallax" class="parallax parallax_2 parallax_2-bottom">
+                    <img src="assets/img/main__item4.png" alt="parallax" class="parallax parallax_4">
+                    <img src="assets/img/main__item5.png" alt="parallax" class="parallax parallax_7">
+                    <img src="assets/img/main__item6.png" alt="parallax" class="parallax parallax_6">
+                    <img src="assets/img/main__item3.png" alt="parallax" class="parallax parallax_8">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__text">Eat&Slim</div>
+            <div class="footer__text footer__date"></div>
+            <div class="popup__link">
+                <span class="popup__open privacy__open footer__text">Privacy policy</span>
+                <span class="popup__open user__open footer__text">User agreement </span>
+                <span class="popup__open term__open footer__text">Term of use</span>
+            </div>
+        </div>
+    </footer>
+    <div class="svg__clip">
+        <svg>
+            <defs>
+                <clipPath id="mainClip" clipPathUnits="objectBoundingBox">
+                    <path d="M1,0 H0 L0,0.856 L0.5,1 L1,0.856 V0" fill="#A2C350"/>
+                </clipPath>
+            </defs>
+        </svg>
+    </div>
 
 
-	<div class="cookie" style="display: none">
-		<div class="cookie__wrap">
-			<div class="cookie__info">Utilizziamo i cookie. I cookie sono piccoli file di testo ospitati sul dispositivo di archiviazione dei dati che possono essere richiesti da un server web nel dominio in cui sono ospitati i cookie. Utilizziamo cookie e tecnologie simili per ricordare le tue preferenze e impostazioni, combattere le frodi, pubblicare annunci basati sugli interessi e altri scopi legittimi. Se selezioni "Sì, sono d'accordo «e poi cambi idea, puoi modificare»impostazioni".</div>
-			<div class="cookie__close">Sì, sono d'accordo</div>
-		</div>
-	</div>
+    <div class="cookie" style="display: none">
+        <div class="cookie__wrap">
+            <div class="cookie__info">Utilizziamo i cookie. I cookie sono piccoli file di testo ospitati sul dispositivo di archiviazione dei dati che possono essere richiesti da un server web nel dominio in cui sono ospitati i cookie. Utilizziamo cookie e tecnologie simili per ricordare le tue preferenze e impostazioni, combattere le frodi, pubblicare annunci basati sugli interessi e altri scopi legittimi. Se selezioni "Sì, sono d'accordo «e poi cambi idea, puoi modificare»impostazioni".</div>
+            <div class="cookie__close">
+                <button>Sì, sono d'accordo</button>
+                <button>Rinunciare</button>
+            </div>
+        </div>
+    </div>
 
-	<div class="popup">
+    <div class="popup">
 
-		<div class="popup__item popup__item_privacy" style="display: none">
-			<div class="popup__container">
-				<div class="popup__close privacy__close"></div>
-				<h1>PRIVACY POLICY</h1>
-				<h2>Introduction</h2>
-				<p>IDEAL PROMO LP (“<b>Company</b>” or “<b>We</b>”) respects your privacy and is committed to protecting it through compliance with this Privacy Policy (“Policy”).
-				</p>
-				<p>This Policy describes the types of information we may collect from you or that you may provide when you visit our website and our practices for collecting, using, maintaining, protecting, and disclosing that information.</p>
-				<p>This Policy applies to information we collect:</p>
-				<ul>
-					<li>on this Website;</li>
-					<li>in email, text, and other electronic messages between you and this Website.</li>
-				</ul>
-				<p>It does not apply to information collected by:</p>
-				<ul>
-					<li>us offline or through any other means; or</li>
-					<li>any third party, including through any application or content (including advertising) that may link to or be accessible from or on the Website.</li>
-				</ul>
-				<p>Please read this Policy carefully to understand our policies and practices regarding your information and how we will treat it. If you do not agree with our policies and practices, your choice is not to use our Website. By accessing or using this Website, you agree to this Policy. This Policy may change from time to time. Your continued use of this Website after we make changes is deemed to be acceptance of those changes, so please check the Policy periodically for updates.</p>
-				<h2>Information We Collect About You and How We Collect It</h2>
-				<p>We collect several types of information from and about users of our Website, including information:</p>
-				<ul>
-					<li>by which you may be personally identified, such as name, postal address, e-mail address, telephone number, or any other identifier by which you may be contacted online or offline (“<b>personal information</b>”);
-					</li>
-					<li>that is about you but individually does not identify you, such as IP address; and/or</li>
-					<li>about your internet connection, the equipment you use to access our Website, and usage details.</li>
-				</ul>
-				<p>We collect this information:</p>
-				<ul>
-					<li>directly from you when you provide it to us;</li>
-					<li>automatically as you navigate through the site. Information collected automatically may include usage details, IP addresses, and information collected through cookies, web beacons, and other tracking technologies; and/or</li>
-					<li>from third parties, for example, our business partners.</li>
-				</ul>
-				<h2>Information You Provide to Us.</h2>
-				<p>The information we collect on or through our Website may include:</p>
-				<ul>
-					<li>information that you provide by filling in forms on our Website. This includes information provided at the time of registering to use our Website, subscribing to our service, or requesting further services. We may also ask you for information when you report a problem with our Website.</li>
-					<li>records and copies of your correspondence (including email addresses), if you contact us.</li>
-					<li>details of transactions you carry out through our Website and of the fulfillment of your orders. You may be required to provide financial information before placing an order through our Website.</li>
-					<li>your search queries on the Website.</li>
-					<li>other information and specifications provided through our product builder.</li>
-				</ul>
-				<h2>Information We Collect Through Automatic Data Collection Technologies.</h2>
-				<p>As you navigate through and interact with our Website, we may use automatic data collection technologies to collect certain information about your equipment, browsing actions, and patterns, including:</p>
-				<ul>
-					<li>details of your visits to our Website, including traffic data, location data, logs, and other communication data and the resources that you access and use on the Website.</li>
-					<li>information about your computer and internet connection, including your IP address, operating system, and browser type.</li>
-				</ul>
-				<p>The information we collect automatically may include personal information, or we may maintain it or associate it with personal information we collect in other ways or receive from third parties. It helps us to improve our Website and to deliver a better and more personalized service, including by enabling us to:</p>
-				<ul>
-					<li>estimate our audience size and usage patterns;</li>
-					<li>store information about your preferences, allowing us to customize our Website according to your individual interests;</li>
-					<li>speed up your searches; and/or</li>
-					<li>recognize you when you return to our Website.</li>
-				</ul>
-				<h2>Third-Party Use of Cookies and Other Tracking Technologies</h2>
-				<p>Some content or applications, including advertisements, on the Website are served by third-parties, including advertisers, ad networks and servers, content providers, and application providers. These third parties may use cookies alone or in conjunction with web beacons or other tracking technologies to collect information about you when you use our Website. The information they collect may be associated with your personal information or they may collect information, including personal information, about your online activities over time and across different websites and other online services. They may use this information to provide you with interest-based (behavioral) advertising or other targeted content.</p>
-				<p>We do not control these third parties’ tracking technologies or how they may be used. If you have any questions about an advertisement or other targeted content, you should contact the responsible provider directly.</p>
-				<h2>How We Use Your Information</h2>
-				<p>We use information that we collect about you or that you provide to us, including any personal information:</p>
-				<ul>
-					<li>to present our Website and its contents to you;</li>
-					<li>to provide you with information, products, or services that you request from us;</li>
-					<li>to fulfill any other purpose for which you provide it;</li>
-					<li>to carry out our obligations and enforce our rights arising from any contracts entered into between you and us, including for billing and collection;</li>
-					<li>to notify you about changes to our Website or any products or services we offer or provide though it;</li>
-					<li>to allow you to participate in interactive features on our Website;</li>
-					<li>in any other way we may describe when you provide the information; and/or</li>
-					<li>for any other purpose with your consent.</li>
-				</ul>
-				<h2>Disclosure of Your Information</h2>
-				<p>We may disclose aggregated information about our users, and information that does not identify any individual, without restriction. We will not sell or rent this information to anyone. We may disclose personal information that we collect or you provide as described in this Policy:</p>
-				<ul>
-					<li>to our subsidiaries and affiliates;</li>
-					<li>to contractors, service providers, and other third parties we use to support our business;</li>
-					<li>to fulfill the purpose for which you provide it;</li>
-					<li>for any other purpose disclosed by us when you provide the information; and/or</li>
-					<li>with your consent.</li>
-				</ul>
-				<h2>Accessing and Correcting Your Information</h2>
-				<p>You can review and change your personal information by logging into the Website and visiting your account profile page.</p>
-				<p>You may send us an email at
-					<a href="mailto:ideal.promo.lp@gmail.com">ideal.promo.lp@gmail.com</a> to request access to, correct, or delete any personal information that you have provided to us. We cannot delete your personal information except by also deleting your user account. We may not accommodate a request to change information if we believe the change would violate any law or legal requirement or cause the information to be incorrect.
-				</p>
-				<p>If you delete your User Contributions from the Website, copies of your User Contributions may remain viewable in cached and archived pages, or might have been copied or stored by other Website users.</p>
-				<h2>Contact Information</h2>
-				<p>To ask questions or comment about this privacy policy and our privacy practices, contact us at
-					<a href="mailto:ideal.promo.lp@gmail.com.">ideal.promo.lp@gmail.com</a>. Please email us to:</p>
-				<ul>
-					<li>see what data we have about you, if any.</li>
-					<li>change/correct any data we have about you.</li>
-					<li>have us delete any data we have about you.</li>
-					<li>register a complaint or express any concern you have about our use of your data.</li>
-				</ul>
-				<h2>Changes to Our Privacy Policy</h2>
-				<p>It is our policy to post any changes we make to our Policy on this page. If we make material changes to how we treat our users’ personal information, we will notify you by posting a notice on our Website home page. The date the privacy policy was last revised is identified at the top of the page. You are responsible for ensuring we have an up-to-date active and deliverable email address for you, and for periodically visiting our Website and this privacy policy to check for any changes.</p>
-			</div>
-		</div>
+        <div class="popup__item popup__item_privacy" style="display: none">
+            <div class="popup__container">
+                <div class="popup__close privacy__close"></div>
+                <h1>PRIVACY POLICY</h1>
+                <h2>Introduction</h2>
+                <p>IDEAL PROMO LP (“<b>Company</b>” or “<b>We</b>”) respects your privacy and is committed to protecting it through compliance with this Privacy Policy (“Policy”).
+                </p>
+                <p>This Policy describes the types of information we may collect from you or that you may provide when you visit our website and our practices for collecting, using, maintaining, protecting, and disclosing that information.</p>
+                <p>This Policy applies to information we collect:</p>
+                <ul>
+                    <li>on this Website;</li>
+                    <li>in email, text, and other electronic messages between you and this Website.</li>
+                </ul>
+                <p>It does not apply to information collected by:</p>
+                <ul>
+                    <li>us offline or through any other means; or</li>
+                    <li>any third party, including through any application or content (including advertising) that may link to or be accessible from or on the Website.</li>
+                </ul>
+                <p>Please read this Policy carefully to understand our policies and practices regarding your information and how we will treat it. If you do not agree with our policies and practices, your choice is not to use our Website. By accessing or using this Website, you agree to this Policy. This Policy may change from time to time. Your continued use of this Website after we make changes is deemed to be acceptance of those changes, so please check the Policy periodically for updates.</p>
+                <h2>Information We Collect About You and How We Collect It</h2>
+                <p>We collect several types of information from and about users of our Website, including information:</p>
+                <ul>
+                    <li>by which you may be personally identified, such as name, postal address, e-mail address, telephone number, or any other identifier by which you may be contacted online or offline (“<b>personal information</b>”);
+                    </li>
+                    <li>that is about you but individually does not identify you, such as IP address; and/or</li>
+                    <li>about your internet connection, the equipment you use to access our Website, and usage details.</li>
+                </ul>
+                <p>We collect this information:</p>
+                <ul>
+                    <li>directly from you when you provide it to us;</li>
+                    <li>automatically as you navigate through the site. Information collected automatically may include usage details, IP addresses, and information collected through cookies, web beacons, and other tracking technologies; and/or</li>
+                    <li>from third parties, for example, our business partners.</li>
+                </ul>
+                <h2>Information You Provide to Us.</h2>
+                <p>The information we collect on or through our Website may include:</p>
+                <ul>
+                    <li>information that you provide by filling in forms on our Website. This includes information provided at the time of registering to use our Website, subscribing to our service, or requesting further services. We may also ask you for information when you report a problem with our Website.</li>
+                    <li>records and copies of your correspondence (including email addresses), if you contact us.</li>
+                    <li>details of transactions you carry out through our Website and of the fulfillment of your orders. You may be required to provide financial information before placing an order through our Website.</li>
+                    <li>your search queries on the Website.</li>
+                    <li>other information and specifications provided through our product builder.</li>
+                </ul>
+                <h2>Information We Collect Through Automatic Data Collection Technologies.</h2>
+                <p>As you navigate through and interact with our Website, we may use automatic data collection technologies to collect certain information about your equipment, browsing actions, and patterns, including:</p>
+                <ul>
+                    <li>details of your visits to our Website, including traffic data, location data, logs, and other communication data and the resources that you access and use on the Website.</li>
+                    <li>information about your computer and internet connection, including your IP address, operating system, and browser type.</li>
+                </ul>
+                <p>The information we collect automatically may include personal information, or we may maintain it or associate it with personal information we collect in other ways or receive from third parties. It helps us to improve our Website and to deliver a better and more personalized service, including by enabling us to:</p>
+                <ul>
+                    <li>estimate our audience size and usage patterns;</li>
+                    <li>store information about your preferences, allowing us to customize our Website according to your individual interests;</li>
+                    <li>speed up your searches; and/or</li>
+                    <li>recognize you when you return to our Website.</li>
+                </ul>
+                <h2>Third-Party Use of Cookies and Other Tracking Technologies</h2>
+                <p>Some content or applications, including advertisements, on the Website are served by third-parties, including advertisers, ad networks and servers, content providers, and application providers. These third parties may use cookies alone or in conjunction with web beacons or other tracking technologies to collect information about you when you use our Website. The information they collect may be associated with your personal information or they may collect information, including personal information, about your online activities over time and across different websites and other online services. They may use this information to provide you with interest-based (behavioral) advertising or other targeted content.</p>
+                <p>We do not control these third parties’ tracking technologies or how they may be used. If you have any questions about an advertisement or other targeted content, you should contact the responsible provider directly.</p>
+                <h2>How We Use Your Information</h2>
+                <p>We use information that we collect about you or that you provide to us, including any personal information:</p>
+                <ul>
+                    <li>to present our Website and its contents to you;</li>
+                    <li>to provide you with information, products, or services that you request from us;</li>
+                    <li>to fulfill any other purpose for which you provide it;</li>
+                    <li>to carry out our obligations and enforce our rights arising from any contracts entered into between you and us, including for billing and collection;</li>
+                    <li>to notify you about changes to our Website or any products or services we offer or provide though it;</li>
+                    <li>to allow you to participate in interactive features on our Website;</li>
+                    <li>in any other way we may describe when you provide the information; and/or</li>
+                    <li>for any other purpose with your consent.</li>
+                </ul>
+                <h2>Disclosure of Your Information</h2>
+                <p>We may disclose aggregated information about our users, and information that does not identify any individual, without restriction. We will not sell or rent this information to anyone. We may disclose personal information that we collect or you provide as described in this Policy:</p>
+                <ul>
+                    <li>to our subsidiaries and affiliates;</li>
+                    <li>to contractors, service providers, and other third parties we use to support our business;</li>
+                    <li>to fulfill the purpose for which you provide it;</li>
+                    <li>for any other purpose disclosed by us when you provide the information; and/or</li>
+                    <li>with your consent.</li>
+                </ul>
+                <h2>Accessing and Correcting Your Information</h2>
+                <p>You can review and change your personal information by logging into the Website and visiting your account profile page.</p>
+                <p>You may send us an email at
+                    <a href="mailto:ideal.promo.lp@gmail.com">ideal.promo.lp@gmail.com</a> to request access to, correct, or delete any personal information that you have provided to us. We cannot delete your personal information except by also deleting your user account. We may not accommodate a request to change information if we believe the change would violate any law or legal requirement or cause the information to be incorrect.
+                </p>
+                <p>If you delete your User Contributions from the Website, copies of your User Contributions may remain viewable in cached and archived pages, or might have been copied or stored by other Website users.</p>
+                <h2>Contact Information</h2>
+                <p>To ask questions or comment about this privacy policy and our privacy practices, contact us at
+                    <a href="mailto:ideal.promo.lp@gmail.com.">ideal.promo.lp@gmail.com</a>. Please email us to:</p>
+                <ul>
+                    <li>see what data we have about you, if any.</li>
+                    <li>change/correct any data we have about you.</li>
+                    <li>have us delete any data we have about you.</li>
+                    <li>register a complaint or express any concern you have about our use of your data.</li>
+                </ul>
+                <h2>Changes to Our Privacy Policy</h2>
+                <p>It is our policy to post any changes we make to our Policy on this page. If we make material changes to how we treat our users’ personal information, we will notify you by posting a notice on our Website home page. The date the privacy policy was last revised is identified at the top of the page. You are responsible for ensuring we have an up-to-date active and deliverable email address for you, and for periodically visiting our Website and this privacy policy to check for any changes.</p>
+            </div>
+        </div>
 
-		<div class="popup__item popup__item_user" style="display: none">
-			<div class="popup__container">
-				<div class="popup__close user__close"></div>
-				<h1>USER AGREEMENT</h1>
-				<p>(the “Agreement”)</p>
-				<p>Dated as of March 27th, 2024</p>
-				<h2>Company’s data:</h2>
-				<p>(IDEAL PROMO LP)</p>
-				<p>(85 Great Portland Street, First Floor, London, United Kingdom, W1W 7LT)</p>
-				<p>(LP022652)</p>
-				<p>(<a href="mailto:ideal.promo.lp@gmail.com)">ideal.promo.lp@gmail.com</a>)</p>
-				<h2>IT IS AGREED as follows:</h2>
-				<h2>1.DEFINITIONS</h2>
-				<p>The definitions and rules of interpretation in this clause apply in this Agreement.</p>
-				<p>“Authorised Users” means consumers over 18 years of agepurchasing the COMPANY’s Product.</p>
-				<p>“Commencement Date” means the date specified above hereof.</p>
-				<p>“COMPANY” is IDEAL PROMO LP.</p>
-				<p>“Content” means weight loss courses, consisting of video lessons and/or accompanying information materials in the form of notes and/or recommendations, access to which is providedto the Authorised Users under this Agreement on the conditions specifies herein.</p>
-				<p>“Fee” has the meaning given to it in Clause 6.1. of this Agreement.</p>
-				<p>“Platforms” means COMPANY’s websites and other content delivery systems used byCOMPANY to provide access to theAuthorised Users in accordance to this Agreement.</p>
-				<p>“Product” means the specific category of Content as specified in the link https://easyslimcourse.com/</p>
-				<h2>2. SERVICES</h2>
-				<p>2.1 COMPANY offers certain online courses content relating to weight loss methods and related subjects. The course description is intended to indicate only the general nature of the course and does not guarantee content.</p>
-				<p>2.2 COMPANY shall have sole discretion to determine the topics, scope form and experts featured in all Content. COMPANY may amend, edit or remove any materials, including without limitation the Content, from the Platforms at any time without prior notice to the Licensee. </p>
-				<p>2.3 COMPANY reserves the right to withdraw Courses at any time, at its own discretion.</p>
-				<p>2.4The Authorised Users may access (including by remote access), browse, view, collate, display, search and retrieve the Content via the Platforms, solely for their personal, educational, scientific, or research purposes.</p>
-				<h2>3. PROHIBITED USES</h2>
-				<p>3.1 The Authorised Users shall not:</p>
-				<p>3.1.1 remove, obscure or alter any copyright or other notices, trademarks, logos, service marks or any other proprietary rights appearing in or on the Content,</p>
-				<p>3.1.2 except as permitted by applicable law or this Agreement, update, change, revise, adapt, modify, translate, transform or create any derivative work of the Content,</p>
-				<p>3.1.3 except as permitted by applicable law or this Agreement, redistribute, reproduce, or transmit the Content by any means including electronic (e. g., via e-mail) nor post it on personal or public websites or on public networks,</p>
-				<p>3.1.4 directly or indirectly use or assist any third party to use the Content for any commercial or monetary purposes including without limitation any sale, resale, loan, transfer or upload of the Content to a commercial entity’s internet website, or otherwise charge a fee for access; or</p>
-				<p>3.1.5 otherwise use the Content in a manner that would infringe the copyright or other proprietary rights contained therein.</p>
-				<p>3.2 The Authorised Users shall not broadcast or onward-stream the Content (in whole or in part) to anyone who is not an Authorised User under this Agreement.</p>
-				<h2>4. RIGHTS AND OBLIGATIONS OF COMPANY</h2>
-				<p>4.1 COMPANY may control access to the Content through Internet Protocol authentication or another identification method reasonably determined by COMPANY.</p>
-				<p>4.2 COMPANY reserves the right to monitor, investigate and analyse all available data including logfiles to detect misuse of the Content.</p>
-				<p>4.3 Where feasible, COMPANY shall collect data on usage of the Content and process these according to applicable privacy and data protection laws and our applicable Privacy Policy.</p>
-				<p>4.4 COMPANY shall use reasonable efforts to provide the Content through the Platforms, subject to periodic unavailability due to (a) unexpected technical issues outside of COMPANY’s control (such as disruption to a third party server), and (b) server and software maintenance; and to restore access to the Content as promptly as possible in the event of an interruption or suspension of access to the Platforms.</p>
-				<p>4.5 COMPANY reserves the right to discontinue publication or distribution of any part of the Content and to withdraw, edit, amend or retract any part of the Content to which it no longer retains the right to publish or which it reasonably believes is incorrect or may give rise to a legal claim.</p>
-				<p>4.6 COMPANY and its suppliers retain all right, title, and interest in and to the Content under this Agreement.</p>
-				<h2>5. REGISTRATION</h2>
-				<p>5.1 Under this Agreement the Authorised Users agree to provide accurate and complete registration information, including their full name, email address,
-					<a href="mailto:ideal.promo.lp@gmail.com.">ideal.promo.lp@gmail.com</a>. Submissionof the registration, alongside full payment of the Fee constitutes the acceptance of the terms of this Agreement.
-				</p>
-				<h2>6. FEE</h2>
-				<p>6.1 To receive access to the Product the Authorised Users must pay the advance fee in the amount of 5 (five) EUR (the “Fee”).</p>
-				<p>6.2 Accepted payment methods are PayPal, MasterCard, Visa, or bank transfer. </p>
-				<p>6.3 Payment is made through the payment systems, which can be accessed via a link from the COMPANY’s website.</p>
-				<p>6.4 Payment will be deemed made when received (i) by COMPANY, (ii) an agent designated by COMPANY. The COMPANY has a right to ask the Authorised User to present a copy of the payment order as payment confirmation.</p>
-				<h2>7. TERMINATION</h2>
-				<p>7.1 Either COMPANY may terminate this Agreement immediately upon written notice to the Authorised User if the latter materially breaches this Agreement.</p>
-				<p>7.2 COMPANY may discontinue accessing the Content via the Platforms to the Authorised User with immediate effect on written notice ifCOMPANY has reasonable grounds to believe that Content is being used in a manner contrary to the terms of this Agreement.</p>
-				<p>7.4 In the event of termination or expiration of this Agreement for any reason, the breaching Authorised User must compensate COMPANY for all thelosses incurred.</p>
-				<h2>8. CONFIDENTIALITY</h2>
-				<p>8.1 The terms of this Agreement constitute the confidential and proprietary information of COMPANY (collectively, the “Confidential Information”). Confidential Information shall not include any information which at the time of disclosure is:</p>
-				<p>(a) known to the recipient independently of this Agreement without a breach of any confidentiality obligation;</p>
-				<p>(b) is in the public domain;</p>
-				<p>(c) is made available to the recipient at any time by an independent third party which has not obtained it directly or indirectly in breach of any obligation of confidentiality to COMPANY.</p>
-				<h2>9. REPRESENTATIONS AND WARRANTIES</h2>
-				<p>9.1 COMPANY represents and warrants that it has sufficient rights in and to the Content as granted herein.</p>
-				<p>9.2 COMPANY shall not be liable for any damages caused by use of the Content by any Authorised User other than as expressly permitted under this Agreement; any failure or malfunction resulting wholly or to any material extent from theAuthorised User’s willful misconduct, negligence, operator error, use other than in accordance with user documentation made available by COMPANY.</p>
-				<p>9.3 Except for the express warranties stated herein and to the extent permitted by Applicable Law, COMPANY provides the content "as is" and makes no other representation or warranty. COMPANY expressly disclaims any liability for any claim arising from or out of the content, including but not limited to any errors, inaccuracies, omissions, or defects contained therein, and any implied or express warranty as to merchantability or fitness for a particular purpose.</p>
-				<h2>10. DATA PROTECTION</h2>
-				<p>10.1 COMPANY is committed to protecting privacy of the Authorised Users and keeping their personal information secure. </p>
-				<p>COMPANY will only request and store the personal information require to:</p>
-				<ul>
-					<li>provide the Authorised Users with its products and services, including those the Authorised Users may be interested in,</li>
-					<li>request and store special category personal information, including health and financial information, when the Authorised User requests a related service,</li>
-					<li>share information with third parties as set out within the Privacy policy.</li>
-				</ul>
-				<h2>11. GENERAL</h2>
-				<p>11.1 Except for any obligations to make payments hereunder, either party’s delay or failure to perform any term or condition of this Agreement as a result of circumstances beyond its control such as, but not limited to, wars, invasions, hostilities (whether war is declared or not), terrorist threats or acts, epidemics, pandemics, strikes, fires, floods, earthquakes, explosions, acts of God, governmental restrictions, market manipulations, actions, orders or laws, embargos or blockades, national or regional emergencies, power, telecommunications or Internet failures, or damage or destruction of any network facilities or servers, shall not be deemed a breach of this Agreement or a basis for liability.</p>
-				<p>11.2 All correspondence addresses to COMPANY in case of any matters shall be delivered by post to the address:</p>
-				<p>85 Great Portland Street, First Floor, London, United Kingdom, W1W 7LT</p>
-				<p>or email address <a href="mailto:ideal.promo.lp@gmail.com">ideal.promo.lp@gmail.com</a></p>
-				<h2>12. GOVERNING LAW AND JURISDICTION</h2>
-				<p>12.1 This Agreement, and any dispute or claim arising out of or in connection with it or its subject matter or formation (including non-contractual disputes or claims), shall be governed by, and construed in accordance with the laws of England and Wales.</p>
-				<p>12.2The parties irrevocably agree that the courts of England shall have exclusive jurisdiction to settle any dispute or claim that arises out of or in connection with this Agreement or its subject matter or formation (including non-contractual disputes or claims).</p>
-			</div>
-		</div>
+        <div class="popup__item popup__item_user" style="display: none">
+            <div class="popup__container">
+                <div class="popup__close user__close"></div>
+                <h1>USER AGREEMENT</h1>
+                <p>(the “Agreement”)</p>
+                <p>Dated as of March 27th, 2024</p>
+                <h2>Company’s data:</h2>
+                <p>(IDEAL PROMO LP)</p>
+                <p>(85 Great Portland Street, First Floor, London, United Kingdom, W1W 7LT)</p>
+                <p>(LP022652)</p>
+                <p>(<a href="mailto:ideal.promo.lp@gmail.com)">ideal.promo.lp@gmail.com</a>)</p>
+                <h2>IT IS AGREED as follows:</h2>
+                <h2>1.DEFINITIONS</h2>
+                <p>The definitions and rules of interpretation in this clause apply in this Agreement.</p>
+                <p>“Authorised Users” means consumers over 18 years of agepurchasing the COMPANY’s Product.</p>
+                <p>“Commencement Date” means the date specified above hereof.</p>
+                <p>“COMPANY” is IDEAL PROMO LP.</p>
+                <p>“Content” means weight loss courses, consisting of video lessons and/or accompanying information materials in the form of notes and/or recommendations, access to which is providedto the Authorised Users under this Agreement on the conditions specifies herein.</p>
+                <p>“Fee” has the meaning given to it in Clause 6.1. of this Agreement.</p>
+                <p>“Platforms” means COMPANY’s websites and other content delivery systems used byCOMPANY to provide access to theAuthorised Users in accordance to this Agreement.</p>
+                <p>“Product” means the specific category of Content as specified in the link https://easyslimcourse.com/</p>
+                <h2>2. SERVICES</h2>
+                <p>2.1 COMPANY offers certain online courses content relating to weight loss methods and related subjects. The course description is intended to indicate only the general nature of the course and does not guarantee content.</p>
+                <p>2.2 COMPANY shall have sole discretion to determine the topics, scope form and experts featured in all Content. COMPANY may amend, edit or remove any materials, including without limitation the Content, from the Platforms at any time without prior notice to the Licensee. </p>
+                <p>2.3 COMPANY reserves the right to withdraw Courses at any time, at its own discretion.</p>
+                <p>2.4The Authorised Users may access (including by remote access), browse, view, collate, display, search and retrieve the Content via the Platforms, solely for their personal, educational, scientific, or research purposes.</p>
+                <h2>3. PROHIBITED USES</h2>
+                <p>3.1 The Authorised Users shall not:</p>
+                <p>3.1.1 remove, obscure or alter any copyright or other notices, trademarks, logos, service marks or any other proprietary rights appearing in or on the Content,</p>
+                <p>3.1.2 except as permitted by applicable law or this Agreement, update, change, revise, adapt, modify, translate, transform or create any derivative work of the Content,</p>
+                <p>3.1.3 except as permitted by applicable law or this Agreement, redistribute, reproduce, or transmit the Content by any means including electronic (e. g., via e-mail) nor post it on personal or public websites or on public networks,</p>
+                <p>3.1.4 directly or indirectly use or assist any third party to use the Content for any commercial or monetary purposes including without limitation any sale, resale, loan, transfer or upload of the Content to a commercial entity’s internet website, or otherwise charge a fee for access; or</p>
+                <p>3.1.5 otherwise use the Content in a manner that would infringe the copyright or other proprietary rights contained therein.</p>
+                <p>3.2 The Authorised Users shall not broadcast or onward-stream the Content (in whole or in part) to anyone who is not an Authorised User under this Agreement.</p>
+                <h2>4. RIGHTS AND OBLIGATIONS OF COMPANY</h2>
+                <p>4.1 COMPANY may control access to the Content through Internet Protocol authentication or another identification method reasonably determined by COMPANY.</p>
+                <p>4.2 COMPANY reserves the right to monitor, investigate and analyse all available data including logfiles to detect misuse of the Content.</p>
+                <p>4.3 Where feasible, COMPANY shall collect data on usage of the Content and process these according to applicable privacy and data protection laws and our applicable Privacy Policy.</p>
+                <p>4.4 COMPANY shall use reasonable efforts to provide the Content through the Platforms, subject to periodic unavailability due to (a) unexpected technical issues outside of COMPANY’s control (such as disruption to a third party server), and (b) server and software maintenance; and to restore access to the Content as promptly as possible in the event of an interruption or suspension of access to the Platforms.</p>
+                <p>4.5 COMPANY reserves the right to discontinue publication or distribution of any part of the Content and to withdraw, edit, amend or retract any part of the Content to which it no longer retains the right to publish or which it reasonably believes is incorrect or may give rise to a legal claim.</p>
+                <p>4.6 COMPANY and its suppliers retain all right, title, and interest in and to the Content under this Agreement.</p>
+                <h2>5. REGISTRATION</h2>
+                <p>5.1 Under this Agreement the Authorised Users agree to provide accurate and complete registration information, including their full name, email address,
+                    <a href="mailto:ideal.promo.lp@gmail.com.">ideal.promo.lp@gmail.com</a>. Submissionof the registration, alongside full payment of the Fee constitutes the acceptance of the terms of this Agreement.
+                </p>
+                <h2>6. FEE</h2>
+                <p>6.1 To receive access to the Product the Authorised Users must pay the advance fee in the amount of 5 (five) EUR (the “Fee”).</p>
+                <p>6.2 Accepted payment methods are PayPal, MasterCard, Visa, or bank transfer. </p>
+                <p>6.3 Payment is made through the payment systems, which can be accessed via a link from the COMPANY’s website.</p>
+                <p>6.4 Payment will be deemed made when received (i) by COMPANY, (ii) an agent designated by COMPANY. The COMPANY has a right to ask the Authorised User to present a copy of the payment order as payment confirmation.</p>
+                <h2>7. TERMINATION</h2>
+                <p>7.1 Either COMPANY may terminate this Agreement immediately upon written notice to the Authorised User if the latter materially breaches this Agreement.</p>
+                <p>7.2 COMPANY may discontinue accessing the Content via the Platforms to the Authorised User with immediate effect on written notice ifCOMPANY has reasonable grounds to believe that Content is being used in a manner contrary to the terms of this Agreement.</p>
+                <p>7.4 In the event of termination or expiration of this Agreement for any reason, the breaching Authorised User must compensate COMPANY for all thelosses incurred.</p>
+                <h2>8. CONFIDENTIALITY</h2>
+                <p>8.1 The terms of this Agreement constitute the confidential and proprietary information of COMPANY (collectively, the “Confidential Information”). Confidential Information shall not include any information which at the time of disclosure is:</p>
+                <p>(a) known to the recipient independently of this Agreement without a breach of any confidentiality obligation;</p>
+                <p>(b) is in the public domain;</p>
+                <p>(c) is made available to the recipient at any time by an independent third party which has not obtained it directly or indirectly in breach of any obligation of confidentiality to COMPANY.</p>
+                <h2>9. REPRESENTATIONS AND WARRANTIES</h2>
+                <p>9.1 COMPANY represents and warrants that it has sufficient rights in and to the Content as granted herein.</p>
+                <p>9.2 COMPANY shall not be liable for any damages caused by use of the Content by any Authorised User other than as expressly permitted under this Agreement; any failure or malfunction resulting wholly or to any material extent from theAuthorised User’s willful misconduct, negligence, operator error, use other than in accordance with user documentation made available by COMPANY.</p>
+                <p>9.3 Except for the express warranties stated herein and to the extent permitted by Applicable Law, COMPANY provides the content "as is" and makes no other representation or warranty. COMPANY expressly disclaims any liability for any claim arising from or out of the content, including but not limited to any errors, inaccuracies, omissions, or defects contained therein, and any implied or express warranty as to merchantability or fitness for a particular purpose.</p>
+                <h2>10. DATA PROTECTION</h2>
+                <p>10.1 COMPANY is committed to protecting privacy of the Authorised Users and keeping their personal information secure. </p>
+                <p>COMPANY will only request and store the personal information require to:</p>
+                <ul>
+                    <li>provide the Authorised Users with its products and services, including those the Authorised Users may be interested in,</li>
+                    <li>request and store special category personal information, including health and financial information, when the Authorised User requests a related service,</li>
+                    <li>share information with third parties as set out within the Privacy policy.</li>
+                </ul>
+                <h2>11. GENERAL</h2>
+                <p>11.1 Except for any obligations to make payments hereunder, either party’s delay or failure to perform any term or condition of this Agreement as a result of circumstances beyond its control such as, but not limited to, wars, invasions, hostilities (whether war is declared or not), terrorist threats or acts, epidemics, pandemics, strikes, fires, floods, earthquakes, explosions, acts of God, governmental restrictions, market manipulations, actions, orders or laws, embargos or blockades, national or regional emergencies, power, telecommunications or Internet failures, or damage or destruction of any network facilities or servers, shall not be deemed a breach of this Agreement or a basis for liability.</p>
+                <p>11.2 All correspondence addresses to COMPANY in case of any matters shall be delivered by post to the address:</p>
+                <p>85 Great Portland Street, First Floor, London, United Kingdom, W1W 7LT</p>
+                <p>or email address <a href="mailto:ideal.promo.lp@gmail.com">ideal.promo.lp@gmail.com</a></p>
+                <h2>12. GOVERNING LAW AND JURISDICTION</h2>
+                <p>12.1 This Agreement, and any dispute or claim arising out of or in connection with it or its subject matter or formation (including non-contractual disputes or claims), shall be governed by, and construed in accordance with the laws of England and Wales.</p>
+                <p>12.2The parties irrevocably agree that the courts of England shall have exclusive jurisdiction to settle any dispute or claim that arises out of or in connection with this Agreement or its subject matter or formation (including non-contractual disputes or claims).</p>
+            </div>
+        </div>
 
-		<div class="popup__item popup__item_term" style="display: none">
-			<div class="popup__container">
-				<div class="popup__close term__close"></div>
-				<h1>Term of Use for the Website: <a href="https://easyslimcourse.com/">https://easyslimcourse.com/</a></h1>
-				<p>Dated as of March 27th, 2024 </p>
-				<p>Use of the Website https://easyslimcourse.com/ (the “Site”) and its contents is subject to the following terms and conditions. By using the Site, or by clicking the “I agree” checkbox, you accept and agree to be legally bound by these Terms of Use, whether or not you are a registered member of the Site. The Terms apply to all users of our website, including without limitation, users who are browsers, customers, merchants, vendors and/or contributors of content.If any of these Terms of Use is unacceptable to you, do not use the Site.</p>
-				<p>As used in these Terms of Use, the terms “we,” “us” and “our” refer to IDEAL PROMO LP (further referred to as «Сompany»).</p>
-				<ul>
-					<li>Changes to Terms of use are binding. We reserve the right to make any modifications to the Terms of use and website, including terminating, changing, suspending or discontinuing any aspect of the website at any time, without advance notice. We may impose additional rules or limits on the use of our website. You agree to review the Terms regularly and your continued access or use of our website will mean that you agree to any changes to the Terms of use.</li>
-					<li>You agree that we will not be liable to you or any third party for any modification, suspension or discontinuance of our website or for any service, content, feature or product offered through our website. Copyright and other protection. The Site and the video material, audio material, text, images, graphics and other content available on the Site (collectively, the “Content”) are protected by copyright, trademark and other laws. The Content consists in part of a series of videos of the Company(further referred to as the “Course Videos”). We or others own the copyright and other rights in the Site and the Content. You may use the Site and the Content only in the manner and for the purposes specified in these Terms of Use.</li>
-					<li>Use of the Site and Content—permissions and restrictions. You may only make noncommercial uses of the Site and the Content. You may access the Course Videos for your own personal use. In addition, you may download any Course Videos for which a downloading option is offered on the Site. Except as specifically permitted in the preceding sentence, you may not retransmit, publish, distribute, display or otherwise make available any of the Course Videos or other Content to others. In no event may you alter or modify the Course Videos or any other Content, including, without limitation, by adding any advertisement or other material or by interfering with the viewing of any Content. You agree to retain all copyright and other notices on any Content you obtain from the Site. None of the foregoing restrictions will apply to your own User Content (as defined below).</li>
-					<li>Fair use and other lawful uses. Nothing in Section 3 above is intended to restrict you from making uses of Course Videos that, in the absence of permission granted under these Terms of Use, would not infringe or violate Сompany or anyone else’s copyright, trademark, or other rights.</li>
-					<li>Reserved rights; no violation of law or others’ rights. All rights in the Site and the Content that are not expressly granted are reserved. You agree to use the Site and the Content only in ways that comply with all applicable laws, as well as with these Terms of Use, and that do not infringe or violate anyone’s rights.</li>
-					<li>Disclaimer of warranties. The site and the content are provided “as is.” to the fullest extent permitted by applicable law, we and our collaborators, licensors, content providers and distributors (collectively, other than providers of user content, our “collaborators”) disclaim all warranties of any kind (express, implied or otherwise) regarding the site or the content, including but not limited to any implied warranties of merchantability, fitness for a particular purpose, and non-infringement. we and our collaborators make no warranty about the accuracy, reliability, completeness, timeliness, sufficiency or quality of the site or the content, nor that any particular content will continue to be made available. We do not approve or endorse any user content or content provided by others. Neither we nor our collaborators warrant that the site will operate without error or interruption, or that the site or its server is free of computer viruses or other harmful materials.</li>
-					<li>Limitations of liability and remedies. We make the site and the content available free of charge. Your use of the site and the content is at your own sole risk. In no event shall we or our collaborators be liable to you, in contract, tort or otherwise, for any indirect, special, incidental, consequential, punitive, exemplary or other such damages arising out of or relating to the site or the content, or your use of the site or the content, or these terms of use, even if the site or content is defective or we are negligent or otherwise at fault, and regardless whether we are advised of the possibility of such damages. If, notwithstanding, we or our collaborators are found liable to you (in contract, tort or otherwise) for any damage or loss arising out of or relating to the site or the content, or your use of the site or the content, or these terms of use, our liability and the liability of our collaborators shall in no event exceed cost of the course chosen on the Websitein aggregate, even if the site or content is defective or we are negligent or otherwise at fault. The foregoing limitations shall apply to the fullest extent permitted by applicable law.
-					</li>
-					<li>Indemnity. You agree to indemnify and hold harmless Company and our Collaborators, and our and their respective officers, fellows, governing board members, directors, employees, and agents, from and against all claims, actions, suits, damages, liabilities, and costs (including, without limitation, reasonable legal fees) arising from or relating to your use of the Site or any of the Content, your provision of any User Content, and/or your failure to comply with any provision of these Terms of Use.</li>
-					<li>Trademarks. Nothing in these Terms of Use or on the Site will be construed as granting you any right or license to use any trademarks, service marks, or logos displayed on the Site. You agree not to use or register any name or logo, of the Company or any of its subdivisions for any purpose except with our prior written approval and in accordance with any restrictions required by us.</li>
-					<li>Copyright complaints. We respect the intellectual property rights of others. If you believe your copyright has been violated on the Site, please notify us about Copyright Infringementsconcerning the Site to e-mail:
-						<a href="mailto:ideal.promo.lp@gmail.com.">ideal.promo.lp@gmail.com</a>.
-					</li>
-					<li>Disputes. Any disputes arising out of or relating to the Terms of use, the Privacy Policy, use of our website, or our products or services offered on our website will be resolved in accordance with the laws of England and Wales.The user of the website irrevocably agree that the courts of England shall have exclusive jurisdiction to settle any dispute or claim that arises out of or in connection with Terms of use or usage of the Website (including non-contractual disputes or claims).</li>
-					<li>Termination; discontinuation of Site or elements. The rights granted to you hereunder will terminate automatically upon any breach by you of these Terms of Use, unless we otherwise specifically agree in writing, but the other provisions of these Terms of Use will survive any such termination. We reserve the right at any time in our sole discretion to cease providing any Content, to change or discontinue any aspect or element of the Site, or to cease making the Site available.</li>
-					<li>General. If any provision of these Terms of Use is held to be invalid or unenforceable, that provision, to the extent unenforceable, shall be struck, and shall not affect the validity or enforceability of the remaining provisions. Your rights under these Terms of Use are personal, nonexclusive and nontransferable. Headings are for reference purposes only and in no way define or limit the scope or extent of any provision of these Terms of Use. Our failure to act with respect to a breach by you or others does not waive our right to act with respect to subsequent or similar breaches. Except as otherwise expressly provided in these Terms of Use, nothing herein shall be deemed to confer any third-party rights or benefits. We may change these Terms of Use from time to time without advance notice. Your use of the Site or any of the Content after any changes have been made will constitute your agreement on a prospective basis to the modified Terms of Use and all of the changes. These Terms of Use set forth the entire understanding and agreement between you and us with respect to the subject matter hereof.
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+        <div class="popup__item popup__item_term" style="display: none">
+            <div class="popup__container">
+                <div class="popup__close term__close"></div>
+                <h1>Term of Use for the Website: <a href="https://easyslimcourse.com/">https://easyslimcourse.com/</a>
+                </h1>
+                <p>Dated as of March 27th, 2024 </p>
+                <p>Use of the Website https://easyslimcourse.com/ (the “Site”) and its contents is subject to the following terms and conditions. By using the Site, or by clicking the “I agree” checkbox, you accept and agree to be legally bound by these Terms of Use, whether or not you are a registered member of the Site. The Terms apply to all users of our website, including without limitation, users who are browsers, customers, merchants, vendors and/or contributors of content.If any of these Terms of Use is unacceptable to you, do not use the Site.</p>
+                <p>As used in these Terms of Use, the terms “we,” “us” and “our” refer to IDEAL PROMO LP (further referred to as «Сompany»).</p>
+                <ul>
+                    <li>Changes to Terms of use are binding. We reserve the right to make any modifications to the Terms of use and website, including terminating, changing, suspending or discontinuing any aspect of the website at any time, without advance notice. We may impose additional rules or limits on the use of our website. You agree to review the Terms regularly and your continued access or use of our website will mean that you agree to any changes to the Terms of use.</li>
+                    <li>You agree that we will not be liable to you or any third party for any modification, suspension or discontinuance of our website or for any service, content, feature or product offered through our website. Copyright and other protection. The Site and the video material, audio material, text, images, graphics and other content available on the Site (collectively, the “Content”) are protected by copyright, trademark and other laws. The Content consists in part of a series of videos of the Company(further referred to as the “Course Videos”). We or others own the copyright and other rights in the Site and the Content. You may use the Site and the Content only in the manner and for the purposes specified in these Terms of Use.</li>
+                    <li>Use of the Site and Content—permissions and restrictions. You may only make noncommercial uses of the Site and the Content. You may access the Course Videos for your own personal use. In addition, you may download any Course Videos for which a downloading option is offered on the Site. Except as specifically permitted in the preceding sentence, you may not retransmit, publish, distribute, display or otherwise make available any of the Course Videos or other Content to others. In no event may you alter or modify the Course Videos or any other Content, including, without limitation, by adding any advertisement or other material or by interfering with the viewing of any Content. You agree to retain all copyright and other notices on any Content you obtain from the Site. None of the foregoing restrictions will apply to your own User Content (as defined below).</li>
+                    <li>Fair use and other lawful uses. Nothing in Section 3 above is intended to restrict you from making uses of Course Videos that, in the absence of permission granted under these Terms of Use, would not infringe or violate Сompany or anyone else’s copyright, trademark, or other rights.</li>
+                    <li>Reserved rights; no violation of law or others’ rights. All rights in the Site and the Content that are not expressly granted are reserved. You agree to use the Site and the Content only in ways that comply with all applicable laws, as well as with these Terms of Use, and that do not infringe or violate anyone’s rights.</li>
+                    <li>Disclaimer of warranties. The site and the content are provided “as is.” to the fullest extent permitted by applicable law, we and our collaborators, licensors, content providers and distributors (collectively, other than providers of user content, our “collaborators”) disclaim all warranties of any kind (express, implied or otherwise) regarding the site or the content, including but not limited to any implied warranties of merchantability, fitness for a particular purpose, and non-infringement. we and our collaborators make no warranty about the accuracy, reliability, completeness, timeliness, sufficiency or quality of the site or the content, nor that any particular content will continue to be made available. We do not approve or endorse any user content or content provided by others. Neither we nor our collaborators warrant that the site will operate without error or interruption, or that the site or its server is free of computer viruses or other harmful materials.</li>
+                    <li>Limitations of liability and remedies. We make the site and the content available free of charge. Your use of the site and the content is at your own sole risk. In no event shall we or our collaborators be liable to you, in contract, tort or otherwise, for any indirect, special, incidental, consequential, punitive, exemplary or other such damages arising out of or relating to the site or the content, or your use of the site or the content, or these terms of use, even if the site or content is defective or we are negligent or otherwise at fault, and regardless whether we are advised of the possibility of such damages. If, notwithstanding, we or our collaborators are found liable to you (in contract, tort or otherwise) for any damage or loss arising out of or relating to the site or the content, or your use of the site or the content, or these terms of use, our liability and the liability of our collaborators shall in no event exceed cost of the course chosen on the Websitein aggregate, even if the site or content is defective or we are negligent or otherwise at fault. The foregoing limitations shall apply to the fullest extent permitted by applicable law.
+                    </li>
+                    <li>Indemnity. You agree to indemnify and hold harmless Company and our Collaborators, and our and their respective officers, fellows, governing board members, directors, employees, and agents, from and against all claims, actions, suits, damages, liabilities, and costs (including, without limitation, reasonable legal fees) arising from or relating to your use of the Site or any of the Content, your provision of any User Content, and/or your failure to comply with any provision of these Terms of Use.</li>
+                    <li>Trademarks. Nothing in these Terms of Use or on the Site will be construed as granting you any right or license to use any trademarks, service marks, or logos displayed on the Site. You agree not to use or register any name or logo, of the Company or any of its subdivisions for any purpose except with our prior written approval and in accordance with any restrictions required by us.</li>
+                    <li>Copyright complaints. We respect the intellectual property rights of others. If you believe your copyright has been violated on the Site, please notify us about Copyright Infringementsconcerning the Site to e-mail:
+                        <a href="mailto:ideal.promo.lp@gmail.com.">ideal.promo.lp@gmail.com</a>.
+                    </li>
+                    <li>Disputes. Any disputes arising out of or relating to the Terms of use, the Privacy Policy, use of our website, or our products or services offered on our website will be resolved in accordance with the laws of England and Wales.The user of the website irrevocably agree that the courts of England shall have exclusive jurisdiction to settle any dispute or claim that arises out of or in connection with Terms of use or usage of the Website (including non-contractual disputes or claims).</li>
+                    <li>Termination; discontinuation of Site or elements. The rights granted to you hereunder will terminate automatically upon any breach by you of these Terms of Use, unless we otherwise specifically agree in writing, but the other provisions of these Terms of Use will survive any such termination. We reserve the right at any time in our sole discretion to cease providing any Content, to change or discontinue any aspect or element of the Site, or to cease making the Site available.</li>
+                    <li>General. If any provision of these Terms of Use is held to be invalid or unenforceable, that provision, to the extent unenforceable, shall be struck, and shall not affect the validity or enforceability of the remaining provisions. Your rights under these Terms of Use are personal, nonexclusive and nontransferable. Headings are for reference purposes only and in no way define or limit the scope or extent of any provision of these Terms of Use. Our failure to act with respect to a breach by you or others does not waive our right to act with respect to subsequent or similar breaches. Except as otherwise expressly provided in these Terms of Use, nothing herein shall be deemed to confer any third-party rights or benefits. We may change these Terms of Use from time to time without advance notice. Your use of the Site or any of the Content after any changes have been made will constitute your agreement on a prospective basis to the modified Terms of Use and all of the changes. These Terms of Use set forth the entire understanding and agreement between you and us with respect to the subject matter hereof.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </main>
 </body>
 </html>
