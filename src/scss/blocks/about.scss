@@ -69,6 +69,7 @@
     position: relative;
     max-width: 406px;
     transition: transform .3s linear;
+    will-change: transform;
 
     &:hover {
       animation: shift .3s linear;

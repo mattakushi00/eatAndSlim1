@@ -22,7 +22,7 @@ function isVisible(domElement) {
 function getParallax(domElement, scroll) {
     domElement.position = scroll ? domElement.position + domElement.ratio : domElement.position - domElement.ratio
     domElement.position = domElement.position < Math.abs(threshold) ? domElement.position : threshold
-    domElement.domNode.style.transform = `translateY(${domElement.position}px)`
+    domElement.domNode.style.transform = `translateY(${domElement.position}px) translateZ(0)`
 }
 
 function startParallaxFor(dom, scroll) {

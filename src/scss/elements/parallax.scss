@@ -2,6 +2,7 @@
   position: absolute;
   z-index: 2;
   transition: transform 1s ease-out;
+  will-change: transform;
 
   &_1 {
     top: 110px;
