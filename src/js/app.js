@@ -1,3 +1,4 @@
+import './setImgHeight'
 import './animation'
 import './header'
 import './nav'

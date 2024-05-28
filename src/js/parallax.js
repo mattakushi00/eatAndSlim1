@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => {
     const topScroll = position > window.scrollY
     position = window.scrollY
     startParallaxFor(stateParallaxElement, topScroll)
-})
+}, { passive: true })
 
 function isVisible(domElement) {
     const borderBottom = domElement.getBoundingClientRect().top - window.innerHeight < 0
