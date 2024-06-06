@@ -41,12 +41,12 @@
         </div>
         <div class="main__layer main__layer_mid">
             <div class="main__container main__container_mid container">
-                <img src="assets/img/main__item4.png" alt="parallax" class="parallax parallax_4">
                 <img src="assets/img/main__item5.png" alt="parallax" class="parallax parallax_5">
             </div>
         </div>
         <div class="main__layer main__layer_front main__mask">
             <div class="main__container container">
+
                 <picture>
                     <source srcset="assets/img/logo_mobile.svg" media="(max-width: 576px)">
                     <img src="assets/img/logo_white.svg" alt="logo" class="main__logo">
@@ -55,19 +55,36 @@
                     <h1 class="main__title">Dimagrisci mangiando!</h1>
                     <h2 class="main__subtitle">Un corso esclusivo tenuto da un importante istruttore di fitness e nutrizionista e da un medico endocrinologo praticante</h2>
                     <h1 class="main__text">Si può mangiare di tutto!</h1>
-                    <img src="assets/img/main1.png" alt="image" class="main__img">
+                    <img src="assets/img/main1.png" alt="image" class="main__img main__img_shift">
                 </div>
                 <div class="main__item">
-                    <div class="main__card">
-                        <div class="main__card-wrap">
-                            <div class="main__card-text">TE LO STIAMO PRATICAMENTE REGALANDO!</div>
-                            <svg class="main__arrow" width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M34.4746 3L48 15M48 15L34.4746 27M48 15L2 15" stroke="#272727" stroke-width="3" stroke-linecap="square"/>
-                            </svg>
-                            <div class="main__price">2€ <span>49€</span></div>
-                            <a href="#send" class="main__link link">еacquistare il corso</a>
+                    <div class="anchor" id="send"></div>
+                    <form class="form">
+                        <div class="form__wrap">
+                            <div class="main__card main__card_transparent">
+                                <div class="main__card-wrap">
+                                    <div class="main__card-text">TE LO STIAMO PRATICAMENTE REGALANDO!</div>
+                                    <svg class="main__arrow" width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M34.4746 3L48 15M48 15L34.4746 27M48 15L2 15" stroke="#272727" stroke-width="3" stroke-linecap="square"/>
+                                    </svg>
+                                    <div class="main__price">2€ <span>49€</span></div>
+                                </div>
+                            </div>
+
+                            <input type="text" class="form__input" name="name" placeholder="Il vostro nome">
+                            <input type="text" class="form__input" name="phone" placeholder="il vostro numero di telefono">
+                            <div class="popup__form">
+                                <input type="checkbox" id="privacy" class="popup__checkbox">
+                                <div class="popup__form-info">
+                                    <label for="privacy" class="popup__label">Autorizzo il trattamento dei miei dati personali con in conformità con la</label>
+                                    <span class="popup__form-link privacy__open">politica sulla privacy</span>
+                                </div>
+                            </div>
+                            <button class="link link_long">Spedisci ora</button>
+
                         </div>
-                    </div>
+                    </form>
+
                     <div class="main__counter counter">
                         <p class="counter__title">Alla fine della promozione sono rimasti:</p>
                         <div class="counter__list">
@@ -91,9 +108,12 @@
                     </div>
                 </div>
                 <img src="assets/img/main__item1.png" alt="parallax" class="parallax parallax_1">
-                <img src="assets/img/main__item2.png" alt="parallax" class="parallax parallax_2">
-                <img src="assets/img/main__item3.png" alt="parallax" class="parallax parallax_3">
+                <img src="assets/img/main__item2.png" alt="parallax" class="parallax parallax_2 parallax_2-bottom">
+                <img src="assets/img/main__item4.png" alt="parallax" class="parallax parallax_4">
+                <img src="assets/img/main__item5.png" alt="parallax" class="parallax parallax_7">
                 <img src="assets/img/main__item6.png" alt="parallax" class="parallax parallax_6">
+                <img src="assets/img/main__item3.png" alt="parallax" class="parallax parallax_8">
+
             </div>
         </div>
 
@@ -433,35 +453,19 @@
                         <h1 class="main__title">Dimagrisci mangiando!</h1>
                         <h2 class="main__subtitle">Un corso esclusivo tenuto da un importante istruttore di fitness e nutrizionista e da un medico endocrinologo praticante</h2>
                         <h1 class="main__text">Si può mangiare di tutto!</h1>
-                        <img src="assets/img/main1.png" alt="image" class="main__img main__img_shift">
+                        <img src="assets/img/main1.png" alt="image" class="main__img">
                     </div>
                     <div class="main__item">
-                        <form class="form">
-                            <div class="form__wrap">
-                                <div class="main__card main__card_transparent">
-                                    <div class="main__card-wrap">
-                                        <div class="main__card-text">TE LO STIAMO PRATICAMENTE REGALANDO!</div>
-                                        <svg class="main__arrow" width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M34.4746 3L48 15M48 15L34.4746 27M48 15L2 15" stroke="#272727" stroke-width="3" stroke-linecap="square"/>
-                                        </svg>
-                                        <div class="main__price" id="send">2€ <span>49€</span></div>
-                                    </div>
-                                </div>
-
-                                <input type="text" class="form__input" name="name" placeholder="Il vostro nome">
-                                <input type="text" class="form__input" name="phone" placeholder="il vostro numero di telefono">
-                                <div class="popup__form">
-                                    <input type="checkbox" id="privacy" class="popup__checkbox">
-                                    <div class="popup__form-info">
-                                        <label for="privacy" class="popup__label">Autorizzo il trattamento dei miei dati personali con in conformità con la</label>
-                                        <span class="popup__form-link privacy__open">politica sulla privacy</span>
-                                    </div>
-                                </div>
-                                <button class="link link_long">еacquistare il corso</button>
-
+                        <div class="main__card">
+                            <div class="main__card-wrap">
+                                <div class="main__card-text">TE LO STIAMO PRATICAMENTE REGALANDO!</div>
+                                <svg class="main__arrow" width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M34.4746 3L48 15M48 15L34.4746 27M48 15L2 15" stroke="#272727" stroke-width="3" stroke-linecap="square"/>
+                                </svg>
+                                <div class="main__price">4.9€ <span>49€</span></div>
+                                <a href="#send" class="main__link link">Acquista il corso</a>
                             </div>
-                        </form>
-
+                        </div>
                         <div class="main__counter counter">
                             <p class="counter__title">Alla fine della promozione sono rimasti:</p>
                             <div class="counter__list">
@@ -485,12 +489,9 @@
                         </div>
                     </div>
                     <img src="assets/img/main__item1.png" alt="parallax" class="parallax parallax_1">
-                    <img src="assets/img/main__item2.png" alt="parallax" class="parallax parallax_2 parallax_2-bottom">
-                    <img src="assets/img/main__item4.png" alt="parallax" class="parallax parallax_4">
-                    <img src="assets/img/main__item5.png" alt="parallax" class="parallax parallax_7">
-                    <img src="assets/img/main__item6.png" alt="parallax" class="parallax parallax_6">
-                    <img src="assets/img/main__item3.png" alt="parallax" class="parallax parallax_8">
-                </div>
+                    <img src="assets/img/main__item2.png" alt="parallax" class="parallax parallax_2">
+                    <img src="assets/img/main__item3.png" alt="parallax" class="parallax parallax_3">
+                    <img src="assets/img/main__item6.png" alt="parallax" class="parallax parallax_6"></div>
             </div>
         </section>
     </div>
