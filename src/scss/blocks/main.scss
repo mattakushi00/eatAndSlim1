@@ -146,6 +146,11 @@
     position: relative;
     z-index: 3;
     max-width: 185px;
+
+    &_color {
+      color: $main2;
+    }
+
   }
 
   &__arrow {
