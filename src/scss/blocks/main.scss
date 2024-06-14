@@ -173,7 +173,7 @@
   }
 
   &__price-old {
-    max-width: 100px;
+    max-width: 150px;
     position: relative;
     font-weight: 700;
     display: block;
@@ -229,7 +229,7 @@
     }
 
     &__img {
-      right: -65px;
+      right: -105px;
       max-width: 510px;
 
       &_shift {
@@ -275,28 +275,28 @@
     }
 
     &__img {
-      right: -120px;
+      right: -150px;
       max-width: 500px;
 
       &_shift {
-        right: -195px;
+        right: -225px;
         max-width: 560px;
       }
     }
 
     &__card {
-      max-width: 640px;
-      padding: 20px;
+      max-width: 410px;
+      padding: 20px 0;
     }
 
     &__card-wrap {
       flex-wrap: wrap;
       justify-content: space-between;
-      max-width: 330px;
     }
 
     &__card-text {
       font-size: 30px;
+      text-align: center;
     }
 
     &__arrow {
@@ -304,7 +304,7 @@
     }
 
     &__price-new {
-      font-size: 60px;
+      font-size: 40px;
     }
 
     &__link {
@@ -351,8 +351,13 @@
       max-width: 20px;
     }
 
+    &__price-old {
+      font-size: 18px;
+      max-width: 100px;
+    }
+
     &__price-new {
-      font-size: 48px;
+      font-size: 28px;
     }
 
     &__card {
@@ -367,6 +372,7 @@
 
     &__img {
       max-width: 370px;
+      right: -180px;
 
       &_shift {
         right: -160px;
@@ -456,6 +462,10 @@
     &__img {
       right: -45px;
       max-width: 247px;
+    }
+
+    &__price-new {
+      font-size: 24px;
     }
 
     &__counter_bottom {
