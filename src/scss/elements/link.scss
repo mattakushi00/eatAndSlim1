@@ -21,8 +21,12 @@
   will-change: transform;
 
   &_long {
-    max-width: 380px;
+    max-width: 390px;
     padding: 30px;
+  }
+
+  &_center {
+    margin: 0 auto;
   }
 
   &:hover {

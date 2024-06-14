@@ -4,7 +4,7 @@
     display: flex;
     gap: 15px;
     position: relative;
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   &__checkbox {
@@ -15,6 +15,7 @@
   }
 
   &__label {
+    font-size: 15px;
     color: $dark;
     cursor: pointer;
     display: inline;

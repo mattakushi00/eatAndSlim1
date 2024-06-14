@@ -120,7 +120,7 @@
     background: $main__flex;
     position: relative;
     z-index: 2;
-    max-width: 875px;
+    max-width: 630px;
     padding: 15px 30px;
     border: 1px solid $white;
     border-radius: 20px;
@@ -135,22 +135,18 @@
 
   &__card-wrap {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 5px;
     max-width: 650px;
   }
 
   &__card-text {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 57px;
+    font-weight: 900;
     position: relative;
     z-index: 3;
-    max-width: 185px;
-
-    &_color {
-      color: $main2;
-    }
-
+    color: $dark;
   }
 
   &__arrow {
@@ -161,51 +157,40 @@
   }
 
   &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__price-new {
     color: $main2;
-    font-size: 78px;
+    font-size: 72px;
     font-weight: 900;
     position: relative;
     z-index: 1;
     width: auto;
+  }
 
-    &:before,
-    &:after {
+  &__price-old {
+    max-width: 100px;
+    position: relative;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
       content: '';
-      display: block;
-      z-index: -1;
-      width: 200px;
-      aspect-ratio: 1 / 1;
-      @include center;
-      border-radius: 50%;
-    }
-
-    &:before {
-      border: 1px solid $white;
-    }
-
-    &:after {
-      background: #ffffffe6;
-      z-index: -2;
-      filter: blur(35px);
-    }
-
-    span {
-      position: relative;
-      font-weight: 700;
-      font-size: 30px;
-      display: block;
-      text-align: center;
-
-      &::after {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        content: '';
-        width: 100%;
-        height: 2px;
-        background-color: red;
-        transform: translate(-50%, -50%) rotate(-20deg);
-      }
+      width: 100%;
+      height: 2px;
+      background-color: red;
+      transform: translate(-50%, -50%) rotate(-20deg);
     }
   }
 
@@ -215,7 +200,6 @@
 
   &__counter {
     z-index: 3;
-    margin-left: 30px;
 
     &_bottom {
       padding: 15px 30px;
@@ -251,11 +235,6 @@
       &_shift {
         right: -45px;
       }
-    }
-
-    &__card-text {
-      font-size: 16px;
-      max-width: 150px;
     }
 
     &__arrow {
@@ -317,20 +296,15 @@
     }
 
     &__card-text {
-      font-size: 16px;
-      max-width: 150px;
+      font-size: 30px;
     }
 
     &__arrow {
       max-width: 30px;
     }
 
-    &__price {
+    &__price-new {
       font-size: 60px;
-
-      &:before {
-        width: 150px;
-      }
     }
 
     &__link {
@@ -339,12 +313,6 @@
       padding: 20px 10px;
     }
   }
-}
-
-.price__old {
-  text-align: left;
-  margin-bottom: 10px;
-  font-size: 36px;
 }
 
 @media screen and (max-width: 768px) {
@@ -383,24 +351,14 @@
       max-width: 20px;
     }
 
-    &__price {
-      font-size: 45px;
-
-      &:before,
-      &:after {
-        width: 110px;
-      }
+    &__price-new {
+      font-size: 48px;
     }
 
     &__card {
       &_transparent {
         padding: 20px 0 0;
       }
-    }
-
-    &__card-text {
-      font-size: 15px;
-      max-width: 135px;
     }
 
     &__counter {
@@ -449,6 +407,10 @@
     &__card-wrap {
       justify-content: center;
       max-width: 100%;
+    }
+
+    &__card-text {
+      font-size: 27px;
     }
 
     &__counter {
